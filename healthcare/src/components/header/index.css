@@ -1,0 +1,60 @@
+/* Tổng quát cho header */
+.header {
+  background-color: #ffffff; /* Màu nền trắng */
+  color: #0a7770; /* Chữ màu xanh lơ */
+  padding: 10px 20px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1); /* Tạo bóng nhẹ */
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  font-family: "lexend", sans-serif;
+}
+
+/* Bố cục container chính */
+.header-container {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Logo */
+.logo {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+/* Navigation links */
+.nav-links {
+  display: flex;
+  gap: 15px;
+}
+
+.nav-links a {
+  text-decoration: none;
+  font-size: 1rem;
+  color: #0a7770; /* Xanh lơ */
+  transition: color 0.3s ease;
+}
+
+.nav-links a:hover {
+  color: #008ba3; /* Màu xanh đậm hơn khi hover */
+}
+
+/* Các icon (Tìm kiếm, Người dùng, Giỏ hàng) */
+.header-icons {
+  display: flex;
+  gap: 15px;
+}
+
+.icon {
+  width: 24px;
+  height: 24px;
+  cursor: pointer;
+  transition: transform 0.3s ease;
+}
+
+.icon:hover {
+  transform: scale(1.1); /* Phóng to nhẹ khi hover */
+}
