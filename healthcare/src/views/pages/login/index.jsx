@@ -16,26 +16,12 @@ import registerQuote from "../../../assets/images/register_quote.png";
 import ryoshi from "../../../assets/images/logoText.png";
 import registerImage from "../../../assets/images/image2.png";
 
-function Register() {
+function Login() {
   const navigate = useNavigate();
-  const handleFinish = (value) => {
-    toast.success("Đăng ký thành công!", {
-      position: "top-right",
-      autoClose: 3000,
-      hideProgressBar: false,
-      closeOnClick: true,
-      pauseOnHover: true,
-      draggable: true,
-      progress: undefined,
-    });
-    setTimeout(() => {
-      navigate("/login");
-    }, 5000);
-    console.log("Received values of form: ", value);
-  };
+  const handleSubmit = (value) => {};
   return (
     <div
-      className="register-container"
+      className="login-container"
       style={{
         backgroundImage: `url(${backgroundImage})`,
         backgroundSize: "cover",
@@ -43,16 +29,16 @@ function Register() {
         height: "100vh",
       }}
     >
-      <div className="register-wrap">
-        <div className="register-wrap-img">
-          <img src={registerImage} className="register-image1" />
-          <img src={ryoshi} className="register-image2" />
+      <div className="login-wrap">
+        <div className="login-wrap-img">
+          <img src={loginImage} className="login-image1" />
+          <img src={ryoshi} className="login-image2" />
         </div>
-        <div className="register-images-bottom">
+        <div className="login-images-bottom">
           <img
             src={registerQuote}
-            alt="Register Bottom Image"
-            className="register-image"
+            alt="Login Bottom Image"
+            className="login-image"
           />
         </div>
 
@@ -69,11 +55,11 @@ function Register() {
               width: 600,
               marginLeft: 10,
             }}
-            className="register-form"
-            onFinish={handleFinish}
+            className="login-form"
+            onFinish={handleSubmit}
           >
             <Form.Item
-              className="register-form-item-mobile"
+              className="login-form-item-mobile"
               name="email"
               rules={[
                 {
@@ -84,12 +70,12 @@ function Register() {
             >
               <Input
                 placeholder="メール"
-                prefix={<MailOutlined className="register-icon" />}
+                prefix={<MailOutlined className="login-icon" />}
               />
             </Form.Item>
 
             <Form.Item
-              className="register-form-item-mobile"
+              className="login-form-item-mobile"
               name="password"
               rules={[
                 {
@@ -100,50 +86,28 @@ function Register() {
             >
               <Input.Password
                 placeholder="パスワード"
-                prefix={<LockOutlined className="register-icon" />}
+                prefix={<LockOutlined className="login-icon" />}
               />
             </Form.Item>
 
-            <Form.Item
-              className="register-form-item-mobile"
-              name="confirm"
-              dependencies={["password"]}
-              hasFeedback
-              rules={[
-                {
-                  message: "パスワードを再入力してください",
-                },
-                ({ getFieldValue }) => ({
-                  validator(_, value) {
-                    if (!value || getFieldValue("password") === value) {
-                      return Promise.resolve();
-                    }
-                    return Promise.reject(
-                      new Error("再入力したパスワードが間違っています")
-                    );
-                  },
-                }),
-              ]}
-            >
-              <Input.Password
-                placeholder="パスワードを確認"
-                prefix={<LockOutlined className="register-icon" />}
-              />
-            </Form.Item>
             <Form.Item style={{ textAlign: "center" }}>
               <Button
                 type="primary"
-                className="register-btn-regis"
+                className="login-btn-regis"
                 htmlType="submit"
               >
-                登録
+                ログイン
               </Button>
             </Form.Item>
           </Form>
         </>
-        <div className="register-to-login">
-          <Link className="register-link" to="/login">
-            アカウントがあった？
+        <div className="login-to-register-to-forgotpassword">
+          <Link className="register-link" to="/register">
+            アカウントがない？
+          </Link>
+
+          <Link className="forgot-link" to="/forgot-password">
+            パスワードを忘れた？
           </Link>
         </div>
         <div className="other-login-methods">
@@ -166,4 +130,4 @@ function Register() {
   );
 }
 
-export default Register;
+export default Login;
