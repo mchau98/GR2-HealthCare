@@ -1,0 +1,104 @@
+.login-container {
+  display: flex;
+  height: 100vh;
+}
+
+.login-image {
+  flex: 3;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: #f1faf1;
+
+  img {
+    height: auto;
+  }
+
+  // Ảnh Logo nhỏ
+  img:first-child {
+    width: 200px; // Đặt kích thước cố định cho logo
+    margin-bottom: 20px;
+  }
+
+  // Ảnh BG lớn hơn
+  img:last-child {
+    width: 500px; // Tăng kích thước ảnh BG
+    max-width: 90%; // Đảm bảo không quá to trên màn hình nhỏ
+  }
+}
+
+.login-form {
+  flex: 2; // Chiếm 40% chiều rộng
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 30px;
+  background-color: white;
+
+  h2 {
+    font-size: 24px;
+    margin-bottom: 20px;
+    color: #097770;
+  }
+
+  form {
+    width: 80%;
+  }
+
+  .input-group {
+    margin-bottom: 15px;
+    display: flex;
+    flex-direction: column;
+
+    label {
+      font-size: 14px;
+      margin-bottom: 5px;
+    }
+
+    input {
+      padding: 10px;
+      border: 1px solid #ccc;
+      border-radius: 5px;
+
+      &:focus {
+        border: 2px solid #097770; 
+        outline: none; // Loại bỏ viền mặc định của trình duyệt
+      }
+    }
+  }
+
+  .login-btn {
+    width: 100%;
+    padding: 10px;
+    background-color: #097770;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 16px;
+
+    &:hover {
+      background-color: #065a56;
+    }
+  }
+  .register-text {
+    margin-top: 15px;
+    font-size: 14px;
+    text-align: center;
+  }
+  
+  .register-link {
+    color: #097770;
+    font-weight: bold;
+    text-decoration: none;
+    transition: color 0.3s ease-in-out;
+  
+    &:hover {
+      text-decoration: underline;
+      color: #ffb82f;
+    }
+  }
+  
+}

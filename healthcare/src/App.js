@@ -1,10 +1,12 @@
+import { BrowserRouter } from "react-router-dom";
 import AllRoutes from "./views/routes";
-import { HashRouter } from "react-router-dom";
+import "./index.scss";
+
 function App() {
   return (
-    <HashRouter>
+    <BrowserRouter>
       <AllRoutes />
-    </HashRouter>
+    </BrowserRouter>
   );
 }
 

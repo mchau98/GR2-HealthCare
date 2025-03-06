@@ -1,29 +1,69 @@
-import "./index.css";
-import React from "react";
+import React, { useContext } from "react";
+import { Link } from "react-router-dom";
+// import { AuthContext } from "../context/authContext";
+import Logo from "../../assets/images/logoText.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
-import { faUser, faMagnifyingGlass, faCartShopping } from "@fortawesome/free-solid-svg-icons";
-
-function Header() {
+import {
+  faUser,
+  faMagnifyingGlass,
+  faCartShopping,
+} from "@fortawesome/free-solid-svg-icons";
+import "./index.scss";
+const Header = () => {
   return (
-    <header className="header">
-      <div className="header-container">
-        <div className="logo">NutriTrack</div>
-        <nav className="nav-links">
-          <a href="#about">Về Nutri Track</a>
-          <a href="#tdee">Tính TDEE</a>
-          <a href="#bmi">Tính BMI</a>
-          <a href="#calories">Tính Calo</a>
-          <a href="#products">Sản phẩm</a>
-          <a href="#knowledge">Kiến thức</a>
-        </nav>
-        <div className="header-icons">
-          <FontAwesomeIcon icon={faMagnifyingGlass} />
-          <FontAwesomeIcon icon={faUser} />
-          <FontAwesomeIcon icon={faCartShopping} />
+    <div className="navbar">
+      <div className="nav-head">
+        <h5>"Life in Balance"</h5>
+      </div>
+      <div className="container">
+        <div className="logo">
+          <Link to="/">
+            <img src={Logo} alt="" />
+          </Link>
+        </div>
+        <div className="links">
+          <Link className="link" to="/caloTrack">
+            <h6>NHẬT KÝ</h6>
+          </Link>
+          <Link className="link" to="/?cat=art">
+            <h6> SẢN PHẨM </h6>
+          </Link>
+          <Link className="link" to="/?cat=technology">
+            <h6>TÍNH TDEE</h6>
+          </Link>
+          <Link className="link" to="/?cat=cinema">
+            <h6>TÍNH BMI</h6>
+          </Link>
+          <Link className="link" to="/posts">
+            <h6>KIẾN THỨC</h6>
+          </Link>
+
+          {/* <span>{currentUser?.username}</span>
+          {currentUser ? (
+            <span onClick={logout}>Logout</span>
+          ) : (
+            <Link className="link" to="/login">
+              Login
+            </Link>
+          )} */}
+          {/* <span className="write">
+            <Link className="link" to="/write">
+              Viết
+            </Link>
+          </span> */}
+          <Link className="link" to="/">
+            <FontAwesomeIcon icon={faMagnifyingGlass} />
+          </Link>
+          <Link className="link" to="/login">
+            <FontAwesomeIcon icon={faUser} />
+          </Link>
+          <Link className="link" to="/">
+            <FontAwesomeIcon icon={faCartShopping} />
+          </Link>
         </div>
       </div>
-    </header>
+    </div>
   );
-}
+};
 
 export default Header;

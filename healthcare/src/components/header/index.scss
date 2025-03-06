@@ -1,0 +1,75 @@
+$lightGreen: #b9e7e7;
+$maincolor: #097770;
+.navbar {
+  .nav-head {
+    position: fixed;
+    width: 100%;
+    z-index: 1000;
+    background-color: #d1e7dd;
+    text-align: center;
+    h5 {
+      padding: 10px;
+    }
+  }
+  .container {
+    padding: 0px 100px;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+
+    .logo {
+      img {
+        width: 120px;
+      }
+    }
+
+    .links {
+      display: flex;
+      align-items: center;
+      gap: 20px;
+      color: $maincolor;
+
+      .link {
+        text-decoration: none;
+        color: inherit;
+
+        &:focus,
+        &:active,
+        &:hover {
+          font-weight: bold;
+          text-decoration: underline;
+          text-decoration-color: #ffb82f;
+          text-decoration-thickness: 3px; // Tăng độ dày gạch chân
+          text-underline-offset: 3px; // Điều chỉnh khoảng cách gạch chân với chữ
+        }
+      }
+
+      h6 {
+        font-size: 16px;
+        font-weight: 300;
+      }
+
+      span {
+        cursor: pointer;
+      }
+
+      .write {
+        background-color: $lightGreen;
+        width: 50px;
+        height: 50px;
+        border-radius: 50%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-weight: 300;
+        border: 1px solid white;
+
+        &:hover {
+          color: teal;
+          background-color: white;
+          border: 1px solid teal;
+        }
+      }
+    }
+  }
+}

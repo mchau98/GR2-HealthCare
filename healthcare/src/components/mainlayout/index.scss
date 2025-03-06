@@ -1,0 +1,9 @@
+.main-container {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh; // Đảm bảo chiều cao tối thiểu bằng toàn bộ màn hình
+  //   padding-top: 50px; // Điều chỉnh dựa trên chiều cao của .nav-head
+  .body {
+    flex: 1; // Đảm bảo phần nội dung mở rộng hết phần còn lại của trang
+  }
+}
