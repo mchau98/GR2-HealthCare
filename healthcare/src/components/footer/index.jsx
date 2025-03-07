@@ -1,7 +1,7 @@
 import "./index.scss";
 import Logo from "../../assets/images/logoText.png";
-import GGPlay from "../../assets/images/bg-login.webp";
-import IOS from "../../assets/images/login-img.png";
+import GGPlay from "../../assets/images/ggpl.png";
+import IOS from "../../assets/images/ios.png";
 import { FontAwesomeIcon } from "@fortawesome/react-fontawesome";
 import { faFacebook } from "@fortawesome/free-brands-svg-icons";
 import { faEarthAmericas } from "@fortawesome/free-solid-svg-icons";
@@ -13,9 +13,9 @@ const Footer = () => {
         <div className="footer-item">
           <img src={Logo} alt="logo" className="footer-logo" />
         </div>
-        <div className="footer-item">{"address"}</div>
+        {/* <div className="footer-item">{"address"}</div>
         <div className="footer-item">{"phone"}</div>
-        <div className="footer-item">{"email"}</div>
+        <div className="footer-item">{"email"}</div> */}
       </div>
       <div className="footer-item-wrap">
         <div className="footer-header header3">{"another_page"}</div>

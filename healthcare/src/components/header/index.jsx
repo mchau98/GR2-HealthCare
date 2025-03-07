@@ -14,7 +14,7 @@ const Header = () => {
   return (
     <div className="navbar">
       <div className="nav-head">
-        <h5>"Life in Balance"</h5>
+        <h5>"Sống khỏe mỗi ngày – Lan tỏa năng lượng tích cực!" </h5>
       </div>
       <div className="container">
         <div className="logo">

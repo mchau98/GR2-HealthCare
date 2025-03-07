@@ -1,0 +1,64 @@
+.slidercom-container {
+  max-width: 124rem;
+  margin: 0 170px;
+
+  .swiper_container {
+    height: 52rem;
+    position: relative;
+  }
+
+  .swiper-slide {
+    width: max-content;
+    height: max-content;
+    position: relative;
+    border-radius: 2rem;
+    padding: 50px;
+    //   transition: transform 0.5s ease-in-out;
+
+    img {
+      border-radius: 2rem;
+      width: 400px;
+      height: auto;
+      object-fit: contain;
+    }
+  }
+
+  .swiper-pagination {
+    bottom: auto;
+    top: 100%; // Đưa pagination xuống dưới ảnh nhưng trên title
+    transform: translateY(-140px); // Điều chỉnh vị trí chính xác
+    text-align: center;
+
+    .swiper-pagination-bullet {
+      background: #097770 !important; // Đổi màu pagination
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #097770;
+    width: 40px;
+    height: 40px;
+    background-color: #ecf4f2; // Màu nền cho hình tròn
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+
+    &::after {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 0px; // Thu gần vào ảnh hơn
+    transform: translateY(-180px);
+  }
+  .swiper-button-next {
+    right: 0px; // Thu gần vào ảnh hơn
+    transform: translateY(-180px);
+  }
+}

@@ -9,6 +9,7 @@
 * {
   padding: 0;
   margin: 0;
+  font-family: "Roboto";
 }
 
 .header1 {
@@ -24,6 +25,8 @@
 .header3 {
   font-size: 18px;
   margin: 18px 0;
+  text-transform: uppercase;
+  font-weight: bold;
 }
 
 .header4 {
@@ -33,4 +36,17 @@
 
 .subText {
   font-size: 14px;
+}
+
+.ant-checkbox-checked .ant-checkbox-inner {
+  background-color: var(--primary-color);
+  border-color: var(--primary-color);
+}
+
+.ant-checkbox-checked::after {
+  border-color: var(--white-color);
+}
+
+.link {
+  text-decoration: none;
 }

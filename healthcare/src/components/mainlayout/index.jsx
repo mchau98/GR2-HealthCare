@@ -6,7 +6,15 @@ function MainLayout(props) {
     <div className="main-container">
       <Header />
 
-      <div className="body">{props.component}</div>
+      <main
+        // style={{
+        //   backgroundColor: "var(--white-color)",
+        //   boxShadow: "0 4px 12px rgba(0, 0, 0, 0.1)",
+        //   borderRadius: "20px",
+        // }}
+      >
+        {props.component}
+      </main>
 
       <Footer />
     </div>

@@ -41,12 +41,12 @@ const MewMobileSlide = () => {
             modules={[Navigation, Pagination, Autoplay]}
             navigation
             pagination={{ clickable: true }}
-            // autoplay={{ delay: 3000 }}
+            autoplay={{ delay: 3000 }}
             loop={true}
             className="swiper-container"
           >
             {slides.map((slide, index) => (
-              <SwiperSlide key={index} className="swiper-slide">
+              <SwiperSlide key={index} className="swiper_slide1">
                 <div className="slide-content">
                   <a href={slide.link} title={slide.title} className="box-img">
                     <img
