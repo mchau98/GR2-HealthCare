@@ -10,6 +10,7 @@ import {
 } from "@fortawesome/free-solid-svg-icons";
 import "./index.scss";
 const Header = () => {
+  const isLoggedIn = sessionStorage.getItem("authToken") !== null;
   return (
     <div className="navbar">
       <div className="nav-head">
@@ -54,7 +55,7 @@ const Header = () => {
           <Link className="link" to="/">
             <FontAwesomeIcon icon={faMagnifyingGlass} />
           </Link>
-          <Link className="link" to="/login">
+          <Link className="link" to={isLoggedIn ? "/userprofile" : "/login"}>
             <FontAwesomeIcon icon={faUser} />
           </Link>
           <Link className="link" to="/">

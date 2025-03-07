@@ -5,7 +5,7 @@ import "./index.scss";
 import { ToastContainer, toast } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import Logo from "../../../assets/images/logoText.png";
-import BG from "../../../assets/images/login-img.png";
+import BG from "../../../assets/images/bg-login.webp";
 
 const Login = () => {
   const navigate = useNavigate();

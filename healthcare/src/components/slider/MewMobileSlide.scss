@@ -1,0 +1,126 @@
+.mew-mobile-slide {
+  position: relative;
+  background-color: #f1faf2;
+  padding: 0px 0; // Tăng chiều cao container
+
+  .tagline {
+    position: absolute;
+    top: -20px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #ffb82e;
+    color: #097770;
+    padding: 8px 16px;
+    border-radius: 8px;
+    font-weight: bold;
+    text-transform: uppercase;
+  }
+
+  .mew-slide {
+    position: relative;
+    padding-top: 30px;
+  }
+
+  .swiper-container {
+    padding-bottom: 50px;
+  }
+
+  .swiper-slide {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+  .slide-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    .box-img {
+      display: block;
+      width: 100%;
+      max-width: 350px; // Tăng kích thước ảnh
+      border-radius: 10px;
+      overflow: hidden;
+
+      img {
+        width: 100%;
+        height: auto;
+        display: block;
+        transition: transform 0.3s ease-in-out;
+      }
+
+      &:hover img {
+        transform: scale(1.05);
+      }
+    }
+
+    .slide-text {
+      margin-top: 10px;
+
+      .title {
+        font-size: 24px;
+        font-weight: bold;
+        color: #097770;
+        text-transform: uppercase;
+        margin-top: 30px; // Để pagination nằm trên title
+      }
+
+      .buy-now {
+        display: inline-block;
+        color: #ffb82e; // Đổi màu chữ mua ngay
+        font-size: 18px;
+        font-weight: bold;
+        margin-top: 5px;
+        text-decoration: none;
+        transition: color 0.3s ease-in-out;
+        margin-right: 5px;
+
+        &:hover {
+          text-decoration: underline;
+        }
+      }
+      .slide-icon {
+        color: #ffb82e;
+      }
+    }
+  }
+
+  .swiper-pagination {
+    bottom: auto;
+    top: 100%; // Đưa pagination xuống dưới ảnh nhưng trên title
+    transform: translateY(-140px); // Điều chỉnh vị trí chính xác
+    text-align: center;
+
+    .swiper-pagination-bullet {
+      background: #097770 !important; // Đổi màu pagination
+    }
+  }
+
+  .swiper-button-prev,
+  .swiper-button-next {
+    color: #097770;
+    width: 40px;
+    height: 40px;
+    background-color: #ecf4f2; // Màu nền cho hình tròn
+    border-radius: 50%;
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    opacity: 0.8;
+
+    &::after {
+      font-size: 18px;
+      font-weight: bold;
+    }
+  }
+
+  .swiper-button-prev {
+    left: 400px; // Thu gần vào ảnh hơn
+  }
+  .swiper-button-next {
+    right: 400px; // Thu gần vào ảnh hơn
+  }
+}

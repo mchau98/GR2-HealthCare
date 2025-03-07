@@ -8,6 +8,7 @@ import doingu from "../../../assets/doingu.png";
 import giaca from "../../../assets/giaca.png";
 import tocdo from "../../../assets/tocdo.png";
 import { Button, Row, Col, Carousel } from "antd";
+import SliderComponent from "../../../components/slider/MewMobileSlide"
 function Home() {
   const slogan = [
     {
@@ -37,13 +38,14 @@ function Home() {
   ];
   return (
     <div className="home-container">
-      <div className="home-poster">
+      <SliderComponent />
+      {/* <div className="home-poster">
         <img
           src={poster}
           alt="posters"
           style={{ width: "1491px", height: "752px" }}
         />
-      </div>
+      </div> */}
       <div className="home-introduce">
         <div className="home-intro">
           <div className="home-intro-img">

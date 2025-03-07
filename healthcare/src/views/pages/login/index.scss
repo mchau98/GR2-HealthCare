@@ -23,7 +23,7 @@
 
   // Ảnh BG lớn hơn
   img:last-child {
-    width: 500px; // Tăng kích thước ảnh BG
+    width: 400px; // Tăng kích thước ảnh BG
     max-width: 90%; // Đảm bảo không quá to trên màn hình nhỏ
   }
 }
@@ -63,7 +63,7 @@
       border-radius: 5px;
 
       &:focus {
-        border: 2px solid #097770; 
+        border: 2px solid #097770;
         outline: none; // Loại bỏ viền mặc định của trình duyệt
       }
     }
@@ -88,17 +88,16 @@
     font-size: 14px;
     text-align: center;
   }
-  
+
   .register-link {
     color: #097770;
     font-weight: bold;
     text-decoration: none;
     transition: color 0.3s ease-in-out;
-  
+
     &:hover {
       text-decoration: underline;
       color: #ffb82f;
     }
   }
-  
 }

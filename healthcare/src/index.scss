@@ -1,5 +1,36 @@
-$maincolor: #097770;
+:root {
+  --primary-color: #097770;
+  --secondary-color: #006d75;
+  --background-color: #f1faf2;
+  --menuHover: #ffb82e;
+  --text-color: #2c2c2c;
+  --white-color: #fff;
+}
 * {
   padding: 0;
   margin: 0;
+}
+
+.header1 {
+  font-size: 24px;
+  margin: 24px 0;
+}
+
+.header2 {
+  font-size: 20px;
+  margin: 20px 0;
+}
+
+.header3 {
+  font-size: 18px;
+  margin: 18px 0;
+}
+
+.header4 {
+  font-size: 16px;
+  margin: 16px 0;
+}
+
+.subText {
+  font-size: 14px;
 }

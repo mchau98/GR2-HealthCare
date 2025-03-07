@@ -37,8 +37,9 @@ $maincolor: #097770;
         &:active,
         &:hover {
           font-weight: bold;
+          color: #ffb82e;
           text-decoration: underline;
-          text-decoration-color: #ffb82f;
+          text-decoration-color: #ffb82e;
           text-decoration-thickness: 3px; // Tăng độ dày gạch chân
           text-underline-offset: 3px; // Điều chỉnh khoảng cách gạch chân với chữ
         }
