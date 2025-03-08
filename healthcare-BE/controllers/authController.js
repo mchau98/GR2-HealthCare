@@ -2,7 +2,6 @@ require("dotenv").config();
 const {
   createUser,
   checkUserExist,
-  updatePassword,
 } = require("../queries/authQuery");
 const bcrypt = require("bcrypt");
 const jwt = require("jsonwebtoken");

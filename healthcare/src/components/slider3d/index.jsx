@@ -5,7 +5,12 @@ import "swiper/css/navigation";
 import "swiper/css/pagination";
 import React from "react";
 import { Swiper, SwiperSlide } from "swiper/react";
-import { Navigation, Pagination, EffectCoverflow } from "swiper/modules";
+import {
+  Navigation,
+  Pagination,
+  EffectCoverflow,
+  Autoplay,
+} from "swiper/modules";
 const SliderComponent = () => {
   return (
     <div className="slidercom-container">
@@ -16,6 +21,7 @@ const SliderComponent = () => {
         loop={true}
         slidesPerView={"auto"}
         spaceBetween={-50}
+        autoplay={{ delay: 3000 }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
@@ -29,7 +35,7 @@ const SliderComponent = () => {
           prevEl: ".swiper-button-prev",
           clickable: true,
         }}
-        modules={[EffectCoverflow, Pagination, Navigation]}
+        modules={[EffectCoverflow, Pagination, Navigation, Autoplay]}
         className="swiper_container"
       >
         <SwiperSlide>
