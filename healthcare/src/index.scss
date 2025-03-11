@@ -9,7 +9,18 @@
 * {
   padding: 0;
   margin: 0;
-  font-family: "Roboto";
+  font-family: "Oswald", "Roboto";
+}
+
+.see-all {
+  color: var(--menuHover);
+  font-size: 14px;
+}
+
+.blog-name {
+  font-weight: bold;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
 }
 
 .header1 {

@@ -5,7 +5,6 @@ import CaloTracker from "../pages/caloTrack";
 import MainLayout from "../../components/mainlayout";
 import Home from "../pages/home";
 import Posts from "../pages/posts";
-import Single from "../pages/post-singel";
 
 const AllRoutes = () => {
   return (
@@ -23,10 +22,6 @@ const AllRoutes = () => {
       <Route
         path="/posts"
         element={<MainLayout component={<Posts />} />}
-      />
-      <Route
-        path="/post"
-        element={<MainLayout component={<Single />} />}
       />
     </Routes>
   );
