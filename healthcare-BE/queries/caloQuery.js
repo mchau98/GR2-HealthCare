@@ -5,6 +5,6 @@ const getCaloByName = async (name) => {
     where: { name: name },
   });
   return caloRecord;
-};
+}; 
 
 module.exports = { getCaloByName };

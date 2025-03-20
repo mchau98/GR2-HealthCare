@@ -111,6 +111,56 @@ const Posts = () => {
             Xem tất cả <FontAwesomeIcon icon={faChevronRight} />
           </p>
         </div>
+        <div class="col-12">
+          <article class="blog-item-list bls clearfix row pt-4 pb-4 pb-lg-0 align-items-center align-items-lg-start">
+            <div class="col-4 col-lg-6">
+              <a
+                href="/yoga-la-gi-loi-ich-cua-viec-thuc-hanh-yoga-doi-voi-me-sau-sinh"
+                class="d-block modal-open thumb_img_blog_list thumb boder-20"
+                title="Yoga l&#224; g&#236;? Lợi &#237;ch của việc thực h&#224;nh yoga đối với mẹ sau sinh"
+              >
+                <span class="modal-open position-relative d-block w-100 m-0 ratio10by7 has-edge aspect zoom">
+                  <img
+                    src="//bizweb.dktcdn.net/100/415/009/themes/891117/assets/placeholder_1x1.png?1736154757405"
+                    data-src="//bizweb.dktcdn.net/100/415/009/articles/yoga-la-gi-loi-ich-cua-viec-thuc-hanh-yoga-doi-voi-me-sau-sinh.jpg?v=1728467381893"
+                    decoding="async"
+                    alt="Yoga l&#224; g&#236;? Lợi &#237;ch của việc thực h&#224;nh yoga đối với mẹ sau sinh"
+                    class="lazy d-block img img-cover position-absolute"
+                  />
+                </span>
+              </a>
+            </div>
+            <div class="blogs-rights col-8 col-lg-6 pl-lg-4">
+              <h3 class="blog-item-name font-weight-bold mb-2 title_blo">
+                <a
+                  class="font-sz26 color-main"
+                  href="/yoga-la-gi-loi-ich-cua-viec-thuc-hanh-yoga-doi-voi-me-sau-sinh"
+                  title="Yoga l&#224; g&#236;? Lợi &#237;ch của việc thực h&#224;nh yoga đối với mẹ sau sinh"
+                >
+                  Yoga l&#224; g&#236;? Lợi &#237;ch của việc thực h&#224;nh
+                  yoga đối với mẹ sau sinh
+                </a>
+              </h3>
+
+              <div class="sum line_3 mb-2 mb-lg-3 h-auto">
+                <p>
+                  Xin chào các mẹ! Chắc hẳn sau khi sinh bé, mẹ đã trải qua rất
+                  nhiều thay đổi về cơ thể lẫn tinh thần. Việc chăm sóc bé yêu
+                  và cùng lúc đó là hồi phục sức khỏe của chính mình có thể là
+                  một thử thách không nhỏ. Nhưng mẹ đừng lo, một giải pháp tuyệt
+                  vời đang chờ mẹ ở đây – đó chính là yoga. Hôm nay, chúng ta sẽ
+                  cùng tìm hiểu về yoga và những lợi ích tuyệt vời mà yoga mang
+                  lại cho các mẹ sau sinh nhé!
+                  
+                </p>
+              </div>
+
+              <div class="post-time small color1e2">
+                09/10/2024 - Nguyễn Thu Phương MKT
+              </div>
+            </div>
+          </article>
+        </div>
       </div>
 
       <div className="posts">
