@@ -8,7 +8,9 @@ const authRoute = require("./routes/authRoute");
 const app = express();
 const port = process.env.PORT || 8080;
 const caloRoute = require("./routes/caloRoute");
+const postsRoute = require("./routes/postsRoute");
 const {crawlLinks} = require("./crawlData/crawlBlog")
+
 app.use(express.json());
 app.use(morgan("combined"));
 app.use(express.urlencoded({ extended: true }));
@@ -29,7 +31,8 @@ app.use((req, res, next) => {
 });
 
 app.use("/api/v1", authRoute);
-app.use("/caloRoute", caloRoute);
+app.use("/api/v1/calo", caloRoute);
+app.use("/api/v1/posts", postsRoute);
 
 sequelize
   .authenticate()
