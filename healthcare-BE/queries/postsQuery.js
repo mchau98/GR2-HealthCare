@@ -3,21 +3,39 @@ const db = require("../models/index");
 const getPostsByCat = async (category) => {
   const filter = {};
   if (category) {
-    filter.category = category; // Lọc theo danh mục nếu có
+    filter.category = category;
   }
 
-  return await Post.findAll({
+  let posts = await db.Post.findAll({
     where: filter,
-    attributes: ['id', 'title', 'content', 'images', 'category', 'tagSearch', 'createdAt'],
+    attributes: [
+      "id",
+      "title",
+      "content",
+      "images",
+      "category",
+      "tagSearch",
+      "createdAt",
+    ],
     include: [
       {
-        model: User,
-        as: 'author',
-        attributes: ['id', 'name']
-      }
+        model: db.User,
+        as: "author",
+        attributes: ["id", "name"],
+      },
     ],
-    order: [['createdAt', 'DESC']] // Sắp xếp bài viết mới nhất lên đầu
+    order: [["createdAt", "DESC"]],
   });
+
+  // Xử lý summary trước khi trả về
+  posts = posts.map((post) => {
+    return {
+      ...post.get({ plain: true }), // Chuyển về object thuần
+      summary: post.content ? post.content.substring(0, 300) : null,
+    };
+  });
+
+  return posts;
 };
 
 module.exports = { getPostsByCat };

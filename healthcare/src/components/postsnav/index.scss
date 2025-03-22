@@ -1,0 +1,55 @@
+.posts-nav {
+    padding: 0px 200px;
+    background-color: var(--background-color);
+    color: var(--primary-color);
+  
+    h1 {
+      font-size: 26px;
+      padding-top: 50px;
+      text-align: center;
+    }
+  
+    p.blog-about {
+      font-size: 16px;
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+  
+    .nav-blog {
+      margin-top: 0.5rem;
+      margin-bottom: 4rem;
+      position: relative;
+    }
+  
+    .mn_box {
+      margin-bottom: 0 !important;
+      padding-bottom: 0.5rem;
+      text-align: center;
+      position: relative;
+    }
+  
+    .li_menu {
+      display: inline-block;
+      margin: 0 10px;
+    }
+  
+    .li_menu .link {
+      text-decoration: none;
+      color: var(--primary-color);
+      padding: 10px 25px;
+      font-size: 16px;
+      border-radius: 20px;
+      transition: all 0.3s ease;
+      background-color: #fff;
+    }
+  
+    .li_menu .link.active {
+      border: 2px solid var(--primary-color);
+      font-weight: bold;
+    }
+  
+    .li_menu .link:hover {
+      border: 2px solid var(--primary-color);
+      font-weight: bold;
+    }
+}
