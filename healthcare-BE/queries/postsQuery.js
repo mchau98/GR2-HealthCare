@@ -38,4 +38,22 @@ const getPostsByCat = async (category) => {
   return posts;
 };
 
-module.exports = { getPostsByCat };
+const getPostById = async (postId) => {
+  try {
+    return await db.Post.findOne({
+      where: { id: postId },  
+      include: [
+        {
+          model: db.User,
+          as: "author", 
+          attributes: ["id", "name", "email"],
+        },
+      ],
+    });
+  } catch (error) {
+    console.error("Database error:", error);
+    throw error;
+  }
+};
+
+module.exports = { getPostsByCat, getPostById };

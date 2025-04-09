@@ -35,7 +35,7 @@ const Header = () => {
           <Link className="link" to="/?cat=cinema">
             <h6>TÍNH BMI</h6>
           </Link>
-          <Link className="link" to="/posts">
+          <Link className="link" to="/post/all">
             <h6>KIẾN THỨC</h6>
           </Link>
 

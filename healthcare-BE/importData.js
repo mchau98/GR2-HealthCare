@@ -21,10 +21,11 @@ const importData = async () => {
     // Chỉ lấy các trường cần thiết, đảm bảo content là chuỗi JSON hợp lệ
     const formattedPosts = posts.map((post) => ({
       title: post.title,
-      content:
-        typeof post.content === "object"
-          ? JSON.stringify(post.content)
-          : post.content || "",
+      // content:
+      //   typeof post.content === "object"
+      //     ? JSON.stringify(post.content)
+      //     : post.content || "",
+      content: post.content,
       images: post.images,
       category: post.category || "Uncategorized",
       author_id: post.author_id || 1, // Nếu thiếu, đặt giá trị mặc định

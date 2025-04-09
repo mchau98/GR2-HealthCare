@@ -9,7 +9,7 @@ const app = express();
 const port = process.env.PORT || 8080;
 const caloRoute = require("./routes/caloRoute");
 const postsRoute = require("./routes/postsRoute");
-const {crawlLinks} = require("./crawlData/crawlBlog")
+// const {crawlLinks} = require("./crawlData/crawlBlog")
 
 app.use(express.json());
 app.use(morgan("combined"));

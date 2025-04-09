@@ -5,6 +5,8 @@ import CaloTracker from "../pages/caloTrack";
 import MainLayout from "../../components/mainlayout";
 import Home from "../pages/home";
 import Posts from "../pages/posts";
+import Single from "../pages/singelpost";
+import Product from "../pages/product";
 
 const AllRoutes = () => {
   return (
@@ -15,14 +17,10 @@ const AllRoutes = () => {
         path="/caloTrack"
         element={<MainLayout component={<CaloTracker />} />}
       />
-      <Route
-        path="/"
-        element={<MainLayout component={<Home />} />}
-      />
-      <Route
-        path="/posts"
-        element={<MainLayout component={<Posts />} />}
-      />
+      <Route path="/" element={<MainLayout component={<Home />} />} />
+      <Route path="/post/all" element={<MainLayout component={<Posts />} />} />
+      <Route path="/post/:id" element={<MainLayout component={<Single />} />} />
+      <Route path="/product/all" element={<MainLayout component={<Product />} />} />
     </Routes>
   );
 };
