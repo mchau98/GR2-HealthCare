@@ -41,7 +41,46 @@ const products = [
       "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/granola-bar.webp",
     available: false,
   },
-  // Thêm sản phẩm nếu muốn
+  {
+    id: 5,
+    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
+    price: 95000,
+    oldPrice: null,
+    image:
+      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
+    isHot: true,
+    available: true,
+  },
+  {
+    id: 6,
+    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
+    price: 95000,
+    oldPrice: null,
+    image:
+      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
+    isHot: true,
+    available: true,
+  },
+  {
+    id: 7,
+    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
+    price: 95000,
+    oldPrice: null,
+    image:
+      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
+    isHot: true,
+    available: true,
+  },
+  {
+    id: 8,
+    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
+    price: 95000,
+    oldPrice: null,
+    image:
+      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
+    isHot: true,
+    available: true,
+  },
 ];
 
 function ProductList() {
