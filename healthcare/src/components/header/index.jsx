@@ -26,7 +26,7 @@ const Header = () => {
           <Link className="link" to="/caloTrack">
             <h6>NHẬT KÝ</h6>
           </Link>
-          <Link className="link" to="/?cat=art">
+          <Link className="link" to="/product/all">
             <h6> SẢN PHẨM </h6>
           </Link>
           <Link className="link" to="/?cat=technology">
