@@ -1,15 +1,12 @@
 .product-container {
   display: flex;
   align-items: flex-start;
-  //   gap: 24px;
   padding: 24px 200px;
 
   .product-navbar {
     flex: 1;
     position: sticky;
     border-right: 2px solid #f4b343;
-    // display: flex;
-    // justify-content: flex-end;
   }
   .product-content {
     flex: 4;

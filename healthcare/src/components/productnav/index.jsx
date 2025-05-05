@@ -22,7 +22,7 @@ const categories = [
   { title: "· Phurba - Tinh Hoa Thảo Dược", link: "/phurba" },
 ];
 
-const activeLink = "/product/all"; // bạn có thể lấy từ router
+const activeLink = "/product/all"; 
 
 const PdNav = () => {
   return (
