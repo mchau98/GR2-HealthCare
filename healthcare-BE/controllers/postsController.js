@@ -7,7 +7,6 @@ const getPosts = async (req, res) => {
   
       return res.status(200).json({ success: true, data: posts });
     } catch (error) {
-      console.error(error);
       return res.status(500).json({ success: false, message: 'Internal Server Error' });
     }
   };
@@ -23,7 +22,6 @@ const getPosts = async (req, res) => {
   
       return res.status(200).json(post);
     } catch (error) {
-      console.error("Error fetching post:", error);
       return res.status(500).json({ message: "Internal Server Error" });
     }
   };

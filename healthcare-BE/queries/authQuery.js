@@ -31,7 +31,6 @@ const createUser = async (userData) => {
         { where: { email: email } }
       );
     } catch (error) {
-      console.error("Error updating password:", error);
       throw error;
     }
   };

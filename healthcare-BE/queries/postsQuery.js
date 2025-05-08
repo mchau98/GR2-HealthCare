@@ -41,17 +41,16 @@ const getPostsByCat = async (category) => {
 const getPostById = async (postId) => {
   try {
     return await db.Post.findOne({
-      where: { id: postId },  
+      where: { id: postId },
       include: [
         {
           model: db.User,
-          as: "author", 
+          as: "author",
           attributes: ["id", "name", "email"],
         },
       ],
     });
   } catch (error) {
-    console.error("Database error:", error);
     throw error;
   }
 };
