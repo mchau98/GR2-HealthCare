@@ -2,24 +2,22 @@ import React from "react";
 import "./index.scss";
 
 const categories = [
-  { title: "· SẢN PHẨM MỚI", link: "/product/all" },
+  { title: "TẤT CẢ SẢN PHẨM", link: "/product/all" },
   {
-    title: "· BÁNH BISCOTTI NGUYÊN CÁM",
+    title: "BÁNH BISCOTTI NGUYÊN CÁM",
     link: "/banh-biscotti-nguyen-cam-hebekery",
   },
-  { title: "· HẠT NGŨ CỐC GRANOLA", link: "/hat-ngu-coc-granola" },
-  { title: "· BÁNH NGÓI HẠNH NHÂN KETO", link: "/banh-ngoi-hanh-nhan" },
+  { title: "HẠT NGŨ CỐC GRANOLA", link: "/hat-ngu-coc-granola" },
+  { title: "BÁNH NGÓI HẠNH NHÂN KETO", link: "/banh-ngoi-hanh-nhan" },
   {
-    title: "· THANH NĂNG LƯỢNG SIÊU HẠT",
+    title: "THANH NĂNG LƯỢNG SIÊU HẠT",
     link: "/energy-bar-thanh-nang-luong",
   },
-  { title: "· HẠT & TRÁI CÂY SẤY NHẬP", link: "/hat-trai-cay-say-nhap-khau" },
+  { title: "HẠT & TRÁI CÂY SẤY NHẬP", link: "/hat-trai-cay-say-nhap-khau" },
   {
-    title: "· Bún, Nui, Mì Gạo Lứt",
+    title: "Bún, Nui, Mì Gạo Lứt",
     link: "/bun-pho-banh-canh-nui-mi-gao-lut",
   },
-  { title: "· Demee - Để Mẹ Lo", link: "/demee-de-me-lo" },
-  { title: "· Phurba - Tinh Hoa Thảo Dược", link: "/phurba" },
 ];
 
 const activeLink = "/product/all"; 
