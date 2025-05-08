@@ -2,64 +2,50 @@
 /** @type {import('sequelize-cli').Migration} */
 module.exports = {
   async up(queryInterface, Sequelize) {
-    await queryInterface.createTable("Posts", {
+    await queryInterface.createTable("Products", {
       id: {
         allowNull: false,
         autoIncrement: true,
         primaryKey: true,
         type: Sequelize.INTEGER,
       },
-      title: {
+      name: {
         type: Sequelize.STRING,
         allowNull: true,
       },
-      content: {
-        type: Sequelize.STRING,
+      price: {
+        type: Sequelize.FLOAT,
         allowNull: true,
       },
-      images: {
-        type: Sequelize.TEXT, 
-        allowNull: true,
-      },
-      author_id: {
+      quantity: {
         type: Sequelize.INTEGER,
-        allowNull: false,
-        references: {
-          model: "User", 
-          key: "id",
-        },
+        allowNull: true,
+      },
+      salePrice: {
+        type: Sequelize.FLOAT,
+        allowNull: true,
+      },
+      category_id: {
+        type: Sequelize.INTEGER,
+        allowNull: true,
         onUpdate: "CASCADE",
         onDelete: "CASCADE",
       },
-      category: {
-        type: Sequelize.ENUM(
-          "Kiến thức dinh dưỡng",
-          "Ăn uống lành mạnh",
-          "Giảm cân lành mạnh"
-        ),
-        allowNull: false,
-      },
-      tagSearch: {
-        type: Sequelize.TEXT, 
+      classification: {
+        type: Sequelize.STRING,
         allowNull: true,
       },
       createdAt: {
         allowNull: false,
         type: Sequelize.DATE,
-        defaultValue: Sequelize.NOW,
       },
       updatedAt: {
         allowNull: false,
         type: Sequelize.DATE,
       },
-      deletedAt: { 
-        type: Sequelize.DATE,
-        allowNull: true
-      }
     });
   },
-
   async down(queryInterface, Sequelize) {
-    await queryInterface.dropTable("Posts");
+    await queryInterface.dropTable("Products");
   },
 };
