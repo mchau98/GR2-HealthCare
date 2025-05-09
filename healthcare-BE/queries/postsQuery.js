@@ -27,10 +27,9 @@ const getPostsByCat = async (category) => {
     order: [["createdAt", "DESC"]],
   });
 
-  // Xử lý summary trước khi trả về
   posts = posts.map((post) => {
     return {
-      ...post.get({ plain: true }), // Chuyển về object thuần
+      ...post.get({ plain: true }), 
       summary: post.content ? post.content.substring(0, 300) : null,
     };
   });

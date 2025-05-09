@@ -9,7 +9,9 @@ const app = express();
 const port = process.env.PORT || 8080;
 const caloRoute = require("./routes/caloRoute");
 const postsRoute = require("./routes/postsRoute");
-// const {crawlLinks} = require("./crawlData/crawlBlog")
+const productRoute = require("./routes/productRoute");
+const { crawlLinks } = require("./crawlData/crawlBlog");
+const { main } = require("./crawlData/crawlProduct");
 
 app.use(express.json());
 app.use(morgan("combined"));
@@ -33,14 +35,14 @@ app.use((req, res, next) => {
 app.use("/api/v1", authRoute);
 app.use("/api/v1/calo", caloRoute);
 app.use("/api/v1/posts", postsRoute);
+app.use("/api/v1/product", productRoute);
 
-sequelize
-  .authenticate()
-  .then(() => {
-    console.log("Connection has been established successfully.");
-  })
+sequelize.authenticate().then(() => {
+  console.log("Connection has been established successfully.");
+});
 
 app.listen(port, () => {
   console.log(`Server is running on port ${port}`);
   // crawlLinks()
+  // main();
 });

@@ -2,7 +2,7 @@ const fs = require("fs");
 const path = require("path");
 const db = require("./models");
 
-const filePath = path.join(__dirname, "crawlData", "articles.json");
+const filePath = path.join(__dirname, "crawlData", "articles_test.json");
 
 const importData = async () => {
   try {

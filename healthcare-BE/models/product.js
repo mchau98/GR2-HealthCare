@@ -15,13 +15,17 @@ module.exports = (sequelize, DataTypes) => {
   }
   Product.init({
     name: {
-      type: DataTypes.STRING,
+      type: DataTypes.TEXT,
       allowNull: false
     },
     price: {
       type: DataTypes.FLOAT,
       allowNull: true,
     },
+    description: {
+      type: DataTypes.TEXT,
+      allowNull: true
+    },    
     quantity: {
       type: DataTypes.INTEGER,
       allowNull: true
@@ -37,7 +41,12 @@ module.exports = (sequelize, DataTypes) => {
     classification: {
       type: DataTypes.STRING,
       allowNull: true,
-    }
+    },
+    images: {
+      type: DataTypes.TEXT,
+      allowNull: true,
+    },
+    
   }, {
     sequelize,
     modelName: 'Product',

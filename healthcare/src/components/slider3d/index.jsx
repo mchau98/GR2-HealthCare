@@ -21,7 +21,7 @@ const SliderComponent = () => {
         loop={true}
         slidesPerView={"auto"}
         spaceBetween={-50}
-        autoplay={{ delay: 3000 }}
+        // autoplay={{ delay: 3000 }}
         coverflowEffect={{
           rotate: 0,
           stretch: 0,
