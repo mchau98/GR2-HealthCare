@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; 
 import "./index.scss";
 
 const PostsPagination = ({ category, showPagination = true }) => {
@@ -55,7 +56,7 @@ const PostsPagination = ({ category, showPagination = true }) => {
       <div className="posts-grid">
         {currentPosts.map((post) => (
           <article key={post.id} className="post-card">
-            <a href={`/post/${post.id}`} className="post-card__image-link">
+            <Link to={`/post/${post.id}`} className="post-card__image-link">
               <img
                 src={
                   post.images?.length > 0
@@ -65,12 +66,12 @@ const PostsPagination = ({ category, showPagination = true }) => {
                 alt={post.title}
                 className="post-card__image"
               />
-            </a>
+            </Link>
             <div className="post-card__content">
               <h3 className="post-card__title">
-                <a href={`/post/${post.id}`} className="post-card__title-link">
+                <Link to={`/post/${post.id}`} className="post-card__title-link">
                   {post.title}
-                </a>
+                </Link>
               </h3>
               <p className="post-card__summary">{post.summary}</p>
               <p className="post-card__meta">

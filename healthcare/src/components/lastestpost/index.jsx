@@ -1,4 +1,5 @@
 import { useEffect, useState } from "react";
+import { Link } from "react-router-dom"; 
 import "./index.scss";
 
 const LatestPost = ({ category }) => {
@@ -32,7 +33,7 @@ const LatestPost = ({ category }) => {
   return (
     <article className="latest-post">
       <div className="latest-post__image">
-        <a href={`/post/${post.id}`} className="latest-post__image-link">
+        <Link to={`/post/${post.id}`} className="latest-post__image-link">
           <img
             src={
               post.images?.length > 0
@@ -42,13 +43,13 @@ const LatestPost = ({ category }) => {
             alt={post.title}
             className="latest-post__img"
           />
-        </a>
+        </Link>
       </div>
       <div className="latest-post__content">
         <h3 className="latest-post__title">
-          <a href={`/post/${post.id}`} className="latest-post__title-link">
+          <Link to={`/post/${post.id}`} className="latest-post__title-link">
             {post.title}
-          </a>
+          </Link>
         </h3>
         <p className="latest-post__summary">{post.summary}</p>
         <p className="latest-post__meta">

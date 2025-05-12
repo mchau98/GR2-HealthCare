@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 
 function ProductCard({ product }) {
   const [isHovered, setIsHovered] = useState(false);
@@ -23,19 +24,19 @@ function ProductCard({ product }) {
       onMouseLeave={() => setIsHovered(false)}
     >
       {discount && <span className="badge discount">{discount}%</span>}
-
-      <img src={imageUrl} alt="img" className="product-image" />
-
+      <Link to={`/product/${product.id}`} className="link">
+        <img src={imageUrl} alt="img" className="product-image" />
+      </Link>
       <div className="product-info">
-        <div className="name">{product.name}</div>
+        <Link to={`/product/${product.id}`} className="link">
+          <div className="name">{product.name}</div>
+        </Link>
         <div className="price">
           {/* Hiển thị price cho tất cả sản phẩm */}
           <strong>{formatPrice(product.price)}₫</strong>
           {/* Hiển thị salePrice và gạch đi price nếu có salePrice */}
           {product.salePrice && product.price !== product.salePrice && (
-            <span className="old-price">
-              {formatPrice(product.salePrice)}₫
-            </span>
+            <span className="old-price">{formatPrice(product.salePrice)}₫</span>
           )}
         </div>
         <button className="add-btn">Thêm vào giỏ</button>
