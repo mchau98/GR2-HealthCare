@@ -2,38 +2,28 @@ import React from "react";
 import "./index.scss";
 
 const categories = [
-  { title: "TẤT CẢ SẢN PHẨM", link: "/product/all" },
-  {
-    title: "BÁNH BISCOTTI NGUYÊN CÁM",
-    link: "/banh-biscotti-nguyen-cam-hebekery",
-  },
-  { title: "HẠT NGŨ CỐC GRANOLA", link: "/hat-ngu-coc-granola" },
-  { title: "BÁNH NGÓI HẠNH NHÂN KETO", link: "/banh-ngoi-hanh-nhan" },
-  {
-    title: "THANH NĂNG LƯỢNG SIÊU HẠT",
-    link: "/energy-bar-thanh-nang-luong",
-  },
-  { title: "HẠT & TRÁI CÂY SẤY NHẬP", link: "/hat-trai-cay-say-nhap-khau" },
-  {
-    title: "Bún, Nui, Mì Gạo Lứt",
-    link: "/bun-pho-banh-canh-nui-mi-gao-lut",
-  },
+  { id: null, title: "TẤT CẢ SẢN PHẨM" },  
+  { id: 1, title: "BÁNH BISCOTTI NGUYÊN CÁM" },
+  { id: 2, title: "HẠT NGŨ CỐC GRANOLA" },
+  { id: 3, title: "BÁNH GÓI HẠNH NHÂN KETO" },
+  { id: 4, title: "THANH NĂNG LƯỢNG SIÊU HẠT" },
+  { id: 5, title: "HẠT VÀ TRÁI CÂY SẤY NHẬP" },
+  { id: 6, title: "BÚN, NUI, MÌ GẠO LỨT" },
 ];
 
-const activeLink = "/product/all"; 
-
-const PdNav = () => {
+const PdNav = ({ onCategorySelect, activeCategoryId }) => {
   return (
     <div className="navbar-vertical">
-      {categories.map((item, index) => (
-        <div key={index} className="nav-item">
-          <a
-            href={item.link}
+      {categories.map((item) => (
+        <div key={item.id ?? 'all'} className="nav-item">
+          <div
             title={item.title}
-            className={`nav-link ${item.link === activeLink ? "active" : ""}`}
+            className={`nav-link ${item.id === activeCategoryId ? "active" : ""}`}
+            onClick={() => onCategorySelect(item.id)}
+            style={{ cursor: "pointer" }}
           >
             {item.title}
-          </a>
+          </div>
         </div>
       ))}
     </div>

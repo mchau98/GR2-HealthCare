@@ -23,7 +23,24 @@ const getProductByCategory = async (req, res) => {
   }
 };
 
+const getProductById = async (req, res) => {
+  try {
+    const productId = req.params.id;
+    const product = await productQuery.getProductById(productId);
+
+    if (!product) {
+      return res.status(404).json({ error: 'Không tìm thấy sản phẩm' });
+    }
+
+    res.status(200).json(product);
+  } catch (error) {
+    res.status(500).json({ error: error.message });
+  }
+};
+
+
 module.exports = {
   getAllProduct,
-  getProductByCategory
+  getProductByCategory,
+  getProductById
 };

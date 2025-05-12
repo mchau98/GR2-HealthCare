@@ -23,7 +23,21 @@ const getProductByCategory = async (categoryId) => {
   }
 };
 
+const getProductById = async (productId) => {
+  try {
+    const products = await Product.findOne({
+      where: {
+        id: productId
+      }
+    });
+    return products;
+  } catch (error) {
+    throw new Error('Failed to fetch products by id: ' + error.message);
+  }
+};
+
 module.exports = {
   getAllProduct,
-  getProductByCategory
+  getProductByCategory,
+  getProductById
 };

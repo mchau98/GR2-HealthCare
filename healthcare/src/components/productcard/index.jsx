@@ -1,31 +1,44 @@
-import React from "react";
+import React, { useState } from "react";
 
 function ProductCard({ product }) {
-  return (
-    <div className="product-card">
-      {product.isHot && <span className="badge hot">HOT</span>}
-      {product.discount && <span className="badge discount">{product.discount}</span>}
+  const [isHovered, setIsHovered] = useState(false);
 
-      <img className="product-image" src={product.image} alt={product.name} />
+  const discount = product.salePrice
+    ? (100 - (product.salePrice / product.price) * 100).toFixed(0)
+    : null;
+
+  const formatPrice = (price) => {
+    return price && !isNaN(price) ? price.toLocaleString() : "Liên hệ";
+  };
+
+  const imageUrl =
+    product.images?.length > 1 && isHovered
+      ? product.images[1]
+      : product.images?.[0] || "https://via.placeholder.com/400";
+
+  return (
+    <div
+      className="product-card"
+      onMouseEnter={() => setIsHovered(true)}
+      onMouseLeave={() => setIsHovered(false)}
+    >
+      {discount && <span className="badge discount">{discount}%</span>}
+
+      <img src={imageUrl} alt="img" className="product-image" />
 
       <div className="product-info">
-        {product.rating && (
-          <div className="rating">
-            <span>{product.rating}★</span>
-            <span>(1)</span>
-          </div>
-        )}
         <div className="name">{product.name}</div>
         <div className="price">
-          <strong>{product.price.toLocaleString()}₫</strong>
-          {product.oldPrice && <span className="old-price">{product.oldPrice.toLocaleString()}₫</span>}
+          {/* Hiển thị price cho tất cả sản phẩm */}
+          <strong>{formatPrice(product.price)}₫</strong>
+          {/* Hiển thị salePrice và gạch đi price nếu có salePrice */}
+          {product.salePrice && product.price !== product.salePrice && (
+            <span className="old-price">
+              {formatPrice(product.salePrice)}₫
+            </span>
+          )}
         </div>
-        <button
-          className={`add-btn ${!product.available ? "disabled" : ""}`}
-          disabled={!product.available}
-        >
-          {product.available ? "Thêm vào giỏ" : "Cháy hàng"}
-        </button>
+        <button className="add-btn">Thêm vào giỏ</button>
       </div>
     </div>
   );

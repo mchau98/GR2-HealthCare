@@ -1,0 +1,12 @@
+.product-grid {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 24px;
+    padding-bottom: 24px;
+  }
+  
+  .products-container {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+  }

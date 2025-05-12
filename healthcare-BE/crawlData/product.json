@@ -1,9 +1,9 @@
 [
   {
     "name": "[Hũ 150gr] Biscotti Nguyên Cám Low Calories 4 Vị Hebekery - Bánh Ngũ Cốc Nướng Ăn Kiêng Lành Mạnh[Hũ 150gr] Biscotti Nguyên Cám Low Calories 4 Vị Hebekery - Bánh Ngũ Cốc Nướng Ăn Kiêng Lành Mạnh[Hũ 150gr] Biscotti Nguyên Cám Low Calories 4 Vị Hebekery - Bánh Ngũ Cốc Nướng Ăn Kiêng Lành Mạnh",
-    "price": 85,
-    "salePrice": 76.5,
-    "quantity": 5,
+    "price": 85000,
+    "salePrice": 76500,
+    "quantity": 50,
     "category_id": 1,
     "classification": "default",
     "images": [
@@ -28,10 +28,10 @@
   },
   {
     "name": "Thanh Hạt Granola Bar Rong Biển Nhật Bản Hebekery - Thanh Ngũ Cốc Siêu Hạt Dinh Dưỡng Rong Biển Ăn Vặt HealthyThanh Hạt Granola Bar Rong Biển Nhật Bản Hebekery - Thanh Ngũ Cốc Siêu Hạt Dinh Dưỡng Rong Biển Ăn Vặt HealthyThanh Hạt Granola Bar Rong Biển Nhật Bản Hebekery - Thanh Ngũ Cốc Siêu Hạt Dinh Dưỡng Rong Biển Ăn Vặt Healthy",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 30,
-    "category_id": 1,
+    "quantity": 23,
+    "category_id": 4,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/rong-bie-n-web-min.png?v=1694838279373",
@@ -50,10 +50,10 @@
   },
   {
     "name": "Hạt Dinh Dưỡng Mix Nuts 8 Loại - Ngũ Cốc Hạt Dinh Dưỡng Cho Mẹ BầuHạt Dinh Dưỡng Mix Nuts 8 Loại - Ngũ Cốc Hạt Dinh Dưỡng Cho Mẹ BầuHạt Dinh Dưỡng Mix Nuts 8 Loại - Ngũ Cốc Hạt Dinh Dưỡng Cho Mẹ Bầu",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 20,
-    "category_id": 1,
+    "quantity": 6,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/mxnuts-1000x1000-min.png?v=1694355033883",
@@ -69,10 +69,10 @@
   },
   {
     "name": "Granola Low Calories Siêu Giòn 5 Vị Hebekery - Ngũ Cốc Ăn Kiêng, Ăn Vặt Healthy Dinh Dưỡng Cho Mẹ BầuGranola Low Calories Siêu Giòn 5 Vị Hebekery - Ngũ Cốc Ăn Kiêng, Ăn Vặt Healthy Dinh Dưỡng Cho Mẹ BầuGranola Low Calories Siêu Giòn 5 Vị Hebekery - Ngũ Cốc Ăn Kiêng, Ăn Vặt Healthy Dinh Dưỡng Cho Mẹ Bầu",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 38,
-    "category_id": 1,
+    "quantity": 26,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/granola-low-calories.png?v=1691416125630",
@@ -94,10 +94,10 @@
   },
   {
     "name": "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery by HeBeCookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery by HeBeCookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery by HeBe",
-    "price": 140,
-    "salePrice": 126,
-    "quantity": 5,
-    "category_id": 1,
+    "price": 140000,
+    "salePrice": 126000,
+    "quantity": 2,
+    "category_id": 3,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
@@ -114,9 +114,9 @@
   },
   {
     "name": "BISCOTTI Nguyên Cám Ăn Kiêng Hebekery - Vị Khoai Lang TímBISCOTTI Nguyên Cám Ăn Kiêng Hebekery - Vị Khoai Lang TímBISCOTTI Nguyên Cám Ăn Kiêng Hebekery - Vị Khoai Lang Tím",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 1,
+    "quantity": 47,
     "category_id": 1,
     "classification": "default",
     "images": [
@@ -133,10 +133,10 @@
   },
   {
     "name": "Granola Siêu Hạt 3 Vị Truyền Thống, Choco, Matcha - Ngũ Cốc Ăn Vặt Dinh Dưỡng Cao Cấp Ăn Kiêng Lành Mạnh by HebekeryGranola Siêu Hạt 3 Vị Truyền Thống, Choco, Matcha - Ngũ Cốc Ăn Vặt Dinh Dưỡng Cao Cấp Ăn Kiêng Lành Mạnh by HebekeryGranola Siêu Hạt 3 Vị Truyền Thống, Choco, Matcha - Ngũ Cốc Ăn Vặt Dinh Dưỡng Cao Cấp Ăn Kiêng Lành Mạnh by Hebekery",
-    "price": 200,
-    "salePrice": 180,
-    "quantity": 39,
-    "category_id": 1,
+    "price": 200000,
+    "salePrice": 180000,
+    "quantity": 37,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/thumbnail-granola-sie-u-ha-t-min.png?v=1701139757340",
@@ -156,10 +156,10 @@
   },
   {
     "name": "Thanh Hạt Muối Hồng Dinh Dưỡng 114Kcal - Crunchy Nut Nutrition Bar HebekeryThanh Hạt Muối Hồng Dinh Dưỡng 114Kcal - Crunchy Nut Nutrition Bar HebekeryThanh Hạt Muối Hồng Dinh Dưỡng 114Kcal - Crunchy Nut Nutrition Bar Hebekery",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 39,
-    "category_id": 1,
+    "quantity": 36,
+    "category_id": 4,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/1-ho-p-min.png?v=1694355153707",
@@ -174,9 +174,9 @@
   },
   {
     "name": "[MUA 3 TẶNG 1] COMBO Trải Nghiệm 3 Hũ Biscotti Nguyên Cám Low Calories (150gr) 3 Vị - Tặng Vị Đặc Biệt Phô Mai Mặn (150gr)[MUA 3 TẶNG 1] COMBO Trải Nghiệm 3 Hũ Biscotti Nguyên Cám Low Calories (150gr) 3 Vị - Tặng Vị Đặc Biệt Phô Mai Mặn (150gr)[MUA 3 TẶNG 1] COMBO Trải Nghiệm 3 Hũ Biscotti Nguyên Cám Low Calories (150gr) 3 Vị - Tặng Vị Đặc Biệt Phô Mai Mặn (150gr)",
-    "price": 255,
-    "salePrice": 229.5,
-    "quantity": 2,
+    "price": 255000,
+    "salePrice": 229500,
+    "quantity": 5,
     "category_id": 1,
     "classification": "default",
     "images": [
@@ -194,9 +194,9 @@
   },
   {
     "name": "[Hộp 300gr] Biscotti Nguyên Cám Low Calories 4 Vị - Bánh Ngũ Cốc Nướng Ăn Kiêng Lành Mạnh[Hộp 300gr] Biscotti Nguyên Cám Low Calories 4 Vị - Bánh Ngũ Cốc Nướng Ăn Kiêng Lành Mạnh[Hộp 300gr] Biscotti Nguyên Cám Low Calories 4 Vị - Bánh Ngũ Cốc Nướng Ăn Kiêng Lành Mạnh",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 25,
+    "quantity": 13,
     "category_id": 1,
     "classification": "default",
     "images": [
@@ -213,9 +213,9 @@
   },
   {
     "name": "BISCOTTI Nguyên Cám Ăn Kiêng Vị Trái Cây Nhiệt Đới HebekeryBISCOTTI Nguyên Cám Ăn Kiêng Vị Trái Cây Nhiệt Đới HebekeryBISCOTTI Nguyên Cám Ăn Kiêng Vị Trái Cây Nhiệt Đới Hebekery",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 4,
+    "quantity": 33,
     "category_id": 1,
     "classification": "default",
     "images": [
@@ -236,10 +236,10 @@
   },
   {
     "name": "[MỚI] Combo 250g Granola Truly Healthy MATCHA + 250g Biscotti 3 Vị Ăn Kiêng Không Đường Hebekery[MỚI] Combo 250g Granola Truly Healthy MATCHA + 250g Biscotti 3 Vị Ăn Kiêng Không Đường Hebekery[MỚI] Combo 250g Granola Truly Healthy MATCHA + 250g Biscotti 3 Vị Ăn Kiêng Không Đường Hebekery",
-    "price": 225,
-    "salePrice": 202.5,
-    "quantity": 36,
-    "category_id": 1,
+    "price": 225000,
+    "salePrice": 202500,
+    "quantity": 38,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/cg250b250.png?v=1677915128097",
@@ -262,9 +262,9 @@
   },
   {
     "name": "Combo 250gr Bánh Ăn Vặt Biscotti Nguyên Cám Không Đường Tinh Luyện + 200gr Thanh Ngũ Cốc Gạo Lứt Ăn KiêngCombo 250gr Bánh Ăn Vặt Biscotti Nguyên Cám Không Đường Tinh Luyện + 200gr Thanh Ngũ Cốc Gạo Lứt Ăn KiêngCombo 250gr Bánh Ăn Vặt Biscotti Nguyên Cám Không Đường Tinh Luyện + 200gr Thanh Ngũ Cốc Gạo Lứt Ăn Kiêng",
-    "price": 235,
-    "salePrice": 211.5,
-    "quantity": 50,
+    "price": 235000,
+    "salePrice": 211500,
+    "quantity": 2,
     "category_id": 1,
     "classification": "default",
     "images": [
@@ -287,9 +287,9 @@
   },
   {
     "name": "Combo 250g Biscotti Trái Cây + 250g Granola Ăn Kiêng Không Đường Tinh LuyệnCombo 250g Biscotti Trái Cây + 250g Granola Ăn Kiêng Không Đường Tinh LuyệnCombo 250g Biscotti Trái Cây + 250g Granola Ăn Kiêng Không Đường Tinh Luyện",
-    "price": 225,
-    "salePrice": 202.5,
-    "quantity": 1,
+    "price": 225000,
+    "salePrice": 202500,
+    "quantity": 18,
     "category_id": 1,
     "classification": "default",
     "images": [
@@ -307,10 +307,10 @@
   },
   {
     "name": "Granola Truly Healthy HebekeryGranola Truly Healthy HebekeryGranola Truly Healthy Hebekery",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 50,
-    "category_id": 1,
+    "quantity": 7,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/grat500-min.png?v=1672369593270",
@@ -324,10 +324,10 @@
   },
   {
     "name": "Granola Truly Healthy Vị Matcha HEBEKERY by HEBE - Ngũ Cốc Dinh Dưỡng Lành Mạnh Tự NhiênGranola Truly Healthy Vị Matcha HEBEKERY by HEBE - Ngũ Cốc Dinh Dưỡng Lành Mạnh Tự NhiênGranola Truly Healthy Vị Matcha HEBEKERY by HEBE - Ngũ Cốc Dinh Dưỡng Lành Mạnh Tự Nhiên",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 3,
-    "category_id": 1,
+    "quantity": 37,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/gram500-min.png?v=1672369771817",
@@ -342,10 +342,10 @@
   },
   {
     "name": "Granola Truly Healthy Vị Chocolate HEBEKERY by HEBE - Ngũ Cốc Dinh Dưỡng Lành Mạnh Tự NhiênGranola Truly Healthy Vị Chocolate HEBEKERY by HEBE - Ngũ Cốc Dinh Dưỡng Lành Mạnh Tự NhiênGranola Truly Healthy Vị Chocolate HEBEKERY by HEBE - Ngũ Cốc Dinh Dưỡng Lành Mạnh Tự Nhiên",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 7,
-    "category_id": 1,
+    "quantity": 16,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/gracc500-min.png?v=1672369661437",
@@ -364,10 +364,10 @@
   },
   {
     "name": "Combo 3 Hũ 500gr Granola Siêu Hạt Dinh Dưỡng 3 Vị - Ngũ Cốc Dinh Dưỡng HEBEKERY by HEBECombo 3 Hũ 500gr Granola Siêu Hạt Dinh Dưỡng 3 Vị - Ngũ Cốc Dinh Dưỡng HEBEKERY by HEBECombo 3 Hũ 500gr Granola Siêu Hạt Dinh Dưỡng 3 Vị - Ngũ Cốc Dinh Dưỡng HEBEKERY by HEBE",
-    "price": 608,
-    "salePrice": 547.2,
-    "quantity": 41,
-    "category_id": 1,
+    "price": 608000,
+    "salePrice": 547200,
+    "quantity": 48,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/cgrasupx500.png?v=1677900114373",
@@ -384,10 +384,10 @@
   },
   {
     "name": "Bánh Ngói Hạnh Nhân Siêu Hạt Ăn Vặt Chuẩn Keto/ Non Keto HEBEKERYBánh Ngói Hạnh Nhân Siêu Hạt Ăn Vặt Chuẩn Keto/ Non Keto HEBEKERYBánh Ngói Hạnh Nhân Siêu Hạt Ăn Vặt Chuẩn Keto/ Non Keto HEBEKERY",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 6,
-    "category_id": 1,
+    "quantity": 29,
+    "category_id": 3,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/avatar-banh-ngoi-hanh-nhan-hebekery.png?v=1692415218177",
@@ -407,10 +407,10 @@
   },
   {
     "name": "Combo 200gr Bánh ngói hạnh nhân x 250gr Granola Truyền ThốngCombo 200gr Bánh ngói hạnh nhân x 250gr Granola Truyền ThốngCombo 200gr Bánh ngói hạnh nhân x 250gr Granola Truyền Thống",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 25,
-    "category_id": 1,
+    "quantity": 4,
+    "category_id": 3,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/bnhnxgramc.png?v=1677912705607",
@@ -433,10 +433,10 @@
   },
   {
     "name": "Bánh Ngói Hạnh Nhân Ăn Kiêng Siêu Hạt Keto Hộp Tiện Lợi 160gBánh Ngói Hạnh Nhân Ăn Kiêng Siêu Hạt Keto Hộp Tiện Lợi 160gBánh Ngói Hạnh Nhân Ăn Kiêng Siêu Hạt Keto Hộp Tiện Lợi 160g",
-    "price": 19,
-    "salePrice": 17.1,
-    "quantity": 33,
-    "category_id": 1,
+    "price": 19000,
+    "salePrice": 17100,
+    "quantity": 15,
+    "category_id": 3,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/vn-11134207-7r98o-lrpcu06scpllc3-jpeg.jpg?v=1725853310283",
@@ -452,10 +452,10 @@
   },
   {
     "name": "Thanh Ngũ Cốc Crunchy Granola Bar Không Đường Tinh Luyện Hebekery - 200gThanh Ngũ Cốc Crunchy Granola Bar Không Đường Tinh Luyện Hebekery - 200gThanh Ngũ Cốc Crunchy Granola Bar Không Đường Tinh Luyện Hebekery - 200g",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 3,
-    "category_id": 1,
+    "quantity": 29,
+    "category_id": 4,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/ba-nh-ngo-i-ha-nh-nha-n.png?v=1686717215030",
@@ -471,10 +471,10 @@
   },
   {
     "name": "Thanh Hạt Rong Biển Nhật Bản Siêu Hạt - Thanh Ngũ Cốc Dinh Dưỡng Ăn Vặt HealthyThanh Hạt Rong Biển Nhật Bản Siêu Hạt - Thanh Ngũ Cốc Dinh Dưỡng Ăn Vặt HealthyThanh Hạt Rong Biển Nhật Bản Siêu Hạt - Thanh Ngũ Cốc Dinh Dưỡng Ăn Vặt Healthy",
-    "price": 199,
-    "salePrice": 179.1,
-    "quantity": 35,
-    "category_id": 1,
+    "price": 199000,
+    "salePrice": 179100,
+    "quantity": 4,
+    "category_id": 4,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/avatar-web-min-7eac3a2e-d0b6-4937-bc63-222a5a791cd5.png?v=1739936616393",
@@ -492,10 +492,10 @@
   },
   {
     "name": "Mơ Sấy Dẻo Thổ Nhĩ Kỳ Không Hạt HebekeryMơ Sấy Dẻo Thổ Nhĩ Kỳ Không Hạt HebekeryMơ Sấy Dẻo Thổ Nhĩ Kỳ Không Hạt Hebekery",
-    "price": 279,
-    "salePrice": 251.1,
-    "quantity": 37,
-    "category_id": 1,
+    "price": 279000,
+    "salePrice": 251100,
+    "quantity": 41,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/mo250-min.png?v=1688479620493",
@@ -509,10 +509,10 @@
   },
   {
     "name": "Nam Việt Quất Mỹ Sấy HebekeryNam Việt Quất Mỹ Sấy HebekeryNam Việt Quất Mỹ Sấy Hebekery",
-    "price": 105,
-    "salePrice": 94.5,
-    "quantity": 15,
-    "category_id": 1,
+    "price": 105000,
+    "salePrice": 94500,
+    "quantity": 9,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/nvq250-min.png?v=1688479620307",
@@ -525,10 +525,10 @@
   },
   {
     "name": "Mận Đen Sấy Nhập Khẩu Chi Lê Túi 250gMận Đen Sấy Nhập Khẩu Chi Lê Túi 250gMận Đen Sấy Nhập Khẩu Chi Lê Túi 250g",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 41,
-    "category_id": 1,
+    "quantity": 11,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/manden250-min.png?v=1672366892813",
@@ -542,10 +542,10 @@
   },
   {
     "name": "Hạnh Nhân Nướng Giòn Rang Mộc HebekeryHạnh Nhân Nướng Giòn Rang Mộc HebekeryHạnh Nhân Nướng Giòn Rang Mộc Hebekery",
-    "price": 110,
-    "salePrice": 99,
-    "quantity": 49,
-    "category_id": 1,
+    "price": 110000,
+    "salePrice": 99000,
+    "quantity": 36,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/hn500-min.png?v=1672385017887",
@@ -558,10 +558,10 @@
   },
   {
     "name": "Đậu Gà Tươi Organic Giàu Protein Thuần Chay HebekeryĐậu Gà Tươi Organic Giàu Protein Thuần Chay HebekeryĐậu Gà Tươi Organic Giàu Protein Thuần Chay Hebekery",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 21,
-    "category_id": 1,
+    "quantity": 37,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/dauga250-min.png?v=1672366278283",
@@ -578,10 +578,10 @@
   },
   {
     "name": "Nhân Óc Chó Nguyên Hạt Cao Cấp HebekeryNhân Óc Chó Nguyên Hạt Cao Cấp HebekeryNhân Óc Chó Nguyên Hạt Cao Cấp Hebekery",
-    "price": 119,
-    "salePrice": 107.1,
-    "quantity": 32,
-    "category_id": 1,
+    "price": 119000,
+    "salePrice": 107100,
+    "quantity": 31,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/occho250-min.png?v=1688479620827",
@@ -598,10 +598,10 @@
   },
   {
     "name": "QUINOA - Hạt Diêm Mạch Cao Cấp Nhập Khẩu HebekeryQUINOA - Hạt Diêm Mạch Cao Cấp Nhập Khẩu HebekeryQUINOA - Hạt Diêm Mạch Cao Cấp Nhập Khẩu Hebekery",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 45,
-    "category_id": 1,
+    "quantity": 27,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/qinoa250-min.png?v=1677901255263",
@@ -613,10 +613,10 @@
   },
   {
     "name": "Hạt Điều Nguyên Hạt Chuẩn Xuất Khẩu Rang MộcHạt Điều Nguyên Hạt Chuẩn Xuất Khẩu Rang MộcHạt Điều Nguyên Hạt Chuẩn Xuất Khẩu Rang Mộc",
-    "price": 249,
-    "salePrice": 224.1,
-    "quantity": 37,
-    "category_id": 1,
+    "price": 249000,
+    "salePrice": 224100,
+    "quantity": 31,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/dieu500-min.png?v=1688479619593",
@@ -631,10 +631,10 @@
   },
   {
     "name": "Mỳ Chũ Gạo Lứt Hebekery 1kgMỳ Chũ Gạo Lứt Hebekery 1kgMỳ Chũ Gạo Lứt Hebekery 1kg",
-    "price": 123,
-    "salePrice": 110.7,
-    "quantity": 43,
-    "category_id": 1,
+    "price": 123000,
+    "salePrice": 110700,
+    "quantity": 48,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/hebe-3.jpg?v=1688627352700",
@@ -651,10 +651,10 @@
   },
   {
     "name": "Bánh Canh Gạo Lứt Hebekery - Dinh Dưỡng Chuẩn Eatclean - Healthy Cho Mẹ Và BéBánh Canh Gạo Lứt Hebekery - Dinh Dưỡng Chuẩn Eatclean - Healthy Cho Mẹ Và BéBánh Canh Gạo Lứt Hebekery - Dinh Dưỡng Chuẩn Eatclean - Healthy Cho Mẹ Và Bé",
-    "price": 72,
-    "salePrice": 64.8,
-    "quantity": 29,
-    "category_id": 1,
+    "price": 72000,
+    "salePrice": 64800,
+    "quantity": 22,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/98.jpg?v=1683816233963",
@@ -670,10 +670,10 @@
   },
   {
     "name": "Nui Gạo Lứt HebekeryNui Gạo Lứt HebekeryNui Gạo Lứt Hebekery",
-    "price": 66,
-    "salePrice": 59.4,
-    "quantity": 10,
-    "category_id": 1,
+    "price": 66000,
+    "salePrice": 59400,
+    "quantity": 43,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/hebe-2.jpg?v=1683817477073",
@@ -688,10 +688,10 @@
   },
   {
     "name": "Phở Gạo Lứt HebekeryPhở Gạo Lứt HebekeryPhở Gạo Lứt Hebekery",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 35,
-    "category_id": 1,
+    "quantity": 38,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/95.jpg?v=1683804538327",
@@ -708,10 +708,10 @@
   },
   {
     "name": "Bún Gạo Lứt Đen HebekeryBún Gạo Lứt Đen HebekeryBún Gạo Lứt Đen Hebekery",
-    "price": 46,
-    "salePrice": 41.4,
-    "quantity": 47,
-    "category_id": 1,
+    "price": 46000,
+    "salePrice": 41400,
+    "quantity": 23,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/93.jpg?v=1683804160817",
@@ -731,10 +731,10 @@
   },
   {
     "name": "Bún Gạo Lứt Đỏ HebekeryBún Gạo Lứt Đỏ HebekeryBún Gạo Lứt Đỏ Hebekery",
-    "price": 88,
-    "salePrice": 79.2,
-    "quantity": 11,
-    "category_id": 1,
+    "price": 88000,
+    "salePrice": 79200,
+    "quantity": 5,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/94.jpg?v=1683803750093",
@@ -753,10 +753,10 @@
   },
   {
     "name": "Gối Thảo Dược Đinh Lăng Cao Cấp Cho Bé Demee - Hỗ Trợ Ngủ Ngon Sâu Giấc Cho Trẻ Sơ Sinh Đến 12 Tháng TuổiGối Thảo Dược Đinh Lăng Cao Cấp Cho Bé Demee - Hỗ Trợ Ngủ Ngon Sâu Giấc Cho Trẻ Sơ Sinh Đến 12 Tháng TuổiGối Thảo Dược Đinh Lăng Cao Cấp Cho Bé Demee - Hỗ Trợ Ngủ Ngon Sâu Giấc Cho Trẻ Sơ Sinh Đến 12 Tháng Tuổi",
-    "price": 99,
-    "salePrice": 89.1,
-    "quantity": 22,
-    "category_id": 1,
+    "price": 99000,
+    "salePrice": 89100,
+    "quantity": 19,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/vn-11134207-7r98o-lyyo5t1vksp93f-jpeg.jpg?v=1727690283040",
@@ -776,10 +776,10 @@
   },
   {
     "name": "Vỏ Gối Đinh Lăng Cao Cấp Cho Bé Demee - Vỏ Gối Cho Trẻ Sơ Sinh Đến 12 Tháng TuổiVỏ Gối Đinh Lăng Cao Cấp Cho Bé Demee - Vỏ Gối Cho Trẻ Sơ Sinh Đến 12 Tháng TuổiVỏ Gối Đinh Lăng Cao Cấp Cho Bé Demee - Vỏ Gối Cho Trẻ Sơ Sinh Đến 12 Tháng Tuổi",
-    "price": 50,
-    "salePrice": 45,
-    "quantity": 27,
-    "category_id": 1,
+    "price": 50000,
+    "salePrice": 45000,
+    "quantity": 34,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/vn-11134207-7r98o-lyyo96s5h9vx07-jpeg.jpg?v=1725872075423",
@@ -799,10 +799,10 @@
   },
   {
     "name": "Bánh Lợi Sữa Dinh Dưỡng Hoàn Toàn Tự Nhiên Dành Cho Mẹ Bầu Demee by Hekebery - Hộp 160gBánh Lợi Sữa Dinh Dưỡng Hoàn Toàn Tự Nhiên Dành Cho Mẹ Bầu Demee by Hekebery - Hộp 160gBánh Lợi Sữa Dinh Dưỡng Hoàn Toàn Tự Nhiên Dành Cho Mẹ Bầu Demee by Hekebery - Hộp 160g",
-    "price": 110,
-    "salePrice": 99,
-    "quantity": 36,
-    "category_id": 1,
+    "price": 110000,
+    "salePrice": 99000,
+    "quantity": 30,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/z5882510646882-5c94703394108feb1374f9e44f0d1f23.jpg?v=1727690044570",
@@ -819,10 +819,10 @@
   },
   {
     "name": "Cotton Chần Bông Khủng Long - Gối Bầu Khuyết Đa Năng Cotton Chần Bông Cao Cấp Demee Dành Cho Mẹ BầuCotton Chần Bông Khủng Long - Gối Bầu Khuyết Đa Năng Cotton Chần Bông Cao Cấp Demee Dành Cho Mẹ BầuCotton Chần Bông Khủng Long - Gối Bầu Khuyết Đa Năng Cotton Chần Bông Cao Cấp Demee Dành Cho Mẹ Bầu",
-    "price": 19,
-    "salePrice": 17.1,
-    "quantity": 9,
-    "category_id": 1,
+    "price": 19000,
+    "salePrice": 17100,
+    "quantity": 21,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/vn-11134207-7r98o-lyyvnlggoril57.jpg?v=1739936613227",
@@ -839,10 +839,10 @@
   },
   {
     "name": "Ruột Gối Thảo Dược Đinh Lăng Cao Cấp Cho Bé by Demee - Hỗ Trợ Ngủ Ngon Sâu Giấc Cho Trẻ Sơ Sinh Đến 12 Tháng TuổiRuột Gối Thảo Dược Đinh Lăng Cao Cấp Cho Bé by Demee - Hỗ Trợ Ngủ Ngon Sâu Giấc Cho Trẻ Sơ Sinh Đến 12 Tháng TuổiRuột Gối Thảo Dược Đinh Lăng Cao Cấp Cho Bé by Demee - Hỗ Trợ Ngủ Ngon Sâu Giấc Cho Trẻ Sơ Sinh Đến 12 Tháng Tuổi",
-    "price": 19,
-    "salePrice": 17.1,
-    "quantity": 13,
-    "category_id": 1,
+    "price": 19000,
+    "salePrice": 17100,
+    "quantity": 3,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/vn-11134207-7r98o-lyyo9zp778el65.jpg?v=1739936613333",
@@ -855,10 +855,10 @@
   },
   {
     "name": "Nước Uống Đông Trùng Hạ Thảo Phurba by Demee (Hộp 8 lọ 50ml)Nước Uống Đông Trùng Hạ Thảo Phurba by Demee (Hộp 8 lọ 50ml)Nước Uống Đông Trùng Hạ Thảo Phurba by Demee (Hộp 8 lọ 50ml)",
-    "price": 490,
-    "salePrice": 441,
-    "quantity": 24,
-    "category_id": 1,
+    "price": 490000,
+    "salePrice": 441000,
+    "quantity": 31,
+    "category_id": 4,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/z5882488771986-b748d1ba7b6a8533aaf2131287477e34.jpg?v=1727689698187",
@@ -875,10 +875,10 @@
   },
   {
     "name": "Bột Collagen NMN L-Glutathione Đông Trùng Hạ Thảo Trẻ Hóa Da Phurba Premium by Demee (Hộp 20 gói x 5g)Bột Collagen NMN L-Glutathione Đông Trùng Hạ Thảo Trẻ Hóa Da Phurba Premium by Demee (Hộp 20 gói x 5g)Bột Collagen NMN L-Glutathione Đông Trùng Hạ Thảo Trẻ Hóa Da Phurba Premium by Demee (Hộp 20 gói x 5g)",
-    "price": 19,
-    "salePrice": 17.1,
-    "quantity": 23,
-    "category_id": 1,
+    "price": 19000,
+    "salePrice": 17100,
+    "quantity": 42,
+    "category_id": 4,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/nmn-cam-2-hop-copy-min.png?v=1727686418603",
@@ -892,10 +892,10 @@
   },
   {
     "name": "Màu Xanh - Gối Bầu Khuyết Đa Năng Tencel 60s Cao Cấp Demee Dành Cho Mẹ BầuMàu Xanh - Gối Bầu Khuyết Đa Năng Tencel 60s Cao Cấp Demee Dành Cho Mẹ BầuMàu Xanh - Gối Bầu Khuyết Đa Năng Tencel 60s Cao Cấp Demee Dành Cho Mẹ Bầu",
-    "price": 629,
-    "salePrice": 566.1,
-    "quantity": 11,
-    "category_id": 1,
+    "price": 629000,
+    "salePrice": 566100,
+    "quantity": 12,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/vn-11134207-7r98o-lyyo73lhgr6pe1-1.png?v=1725870706717",
@@ -912,10 +912,10 @@
   },
   {
     "name": "Trà Dây Thìa Canh - Giảo Cổ Lam Phurba Hỗ Trợ Kiểm Soát Mỡ Máu - Đường Huyết (Hộp 20 gói x 3.5g)Trà Dây Thìa Canh - Giảo Cổ Lam Phurba Hỗ Trợ Kiểm Soát Mỡ Máu - Đường Huyết (Hộp 20 gói x 3.5g)Trà Dây Thìa Canh - Giảo Cổ Lam Phurba Hỗ Trợ Kiểm Soát Mỡ Máu - Đường Huyết (Hộp 20 gói x 3.5g)",
-    "price": 480,
-    "salePrice": 432,
-    "quantity": 4,
-    "category_id": 1,
+    "price": 480000,
+    "salePrice": 432000,
+    "quantity": 16,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/z5882461686761-c1153619b2bb92c0069386bdcd8eaaf9.jpg?v=1727689243363",
@@ -929,10 +929,10 @@
   },
   {
     "name": "Trà Bổ Xương Khớp Phurba - Hỗ Trợ Giảm Đau Và Cải Thiện Dịch Xương Khớp (Hộp 20 gói x 5g)Trà Bổ Xương Khớp Phurba - Hỗ Trợ Giảm Đau Và Cải Thiện Dịch Xương Khớp (Hộp 20 gói x 5g)Trà Bổ Xương Khớp Phurba - Hỗ Trợ Giảm Đau Và Cải Thiện Dịch Xương Khớp (Hộp 20 gói x 5g)",
-    "price": 490,
-    "salePrice": 441,
-    "quantity": 2,
-    "category_id": 1,
+    "price": 490000,
+    "salePrice": 441000,
+    "quantity": 31,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/z5882353435143-a030e87eef40cb9e1d0f7c78e993372f.jpg?v=1727687475530",
@@ -945,10 +945,10 @@
   },
   {
     "name": "Trà Bổ Phế Phurba - Tăng Đề Kháng, Tiêu Đờm, Giảm Ho (Hộp 20 gói x 5g)Trà Bổ Phế Phurba - Tăng Đề Kháng, Tiêu Đờm, Giảm Ho (Hộp 20 gói x 5g)Trà Bổ Phế Phurba - Tăng Đề Kháng, Tiêu Đờm, Giảm Ho (Hộp 20 gói x 5g)",
-    "price": 490,
-    "salePrice": 441,
-    "quantity": 27,
-    "category_id": 1,
+    "price": 490000,
+    "salePrice": 441000,
+    "quantity": 43,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/tra-bo-phe-do-2-hop-copy-1-min.png?v=1727685135283",
@@ -960,10 +960,10 @@
   },
   {
     "name": "Trà Đinh Lăng Ngủ Ngon Phurba Cải Thiện Giấc Ngủ (Hộp 20 gói x 5g)Trà Đinh Lăng Ngủ Ngon Phurba Cải Thiện Giấc Ngủ (Hộp 20 gói x 5g)Trà Đinh Lăng Ngủ Ngon Phurba Cải Thiện Giấc Ngủ (Hộp 20 gói x 5g)",
-    "price": 490,
-    "salePrice": 441,
-    "quantity": 22,
-    "category_id": 1,
+    "price": 490000,
+    "salePrice": 441000,
+    "quantity": 21,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/z5882344570699-0f9c8d6cfff4605631d18448782131fa.jpg?v=1727687342983",
@@ -975,10 +975,10 @@
   },
   {
     "name": "Trà Đông Trùng Hạ Thảo Fucoidan Phurba (Hộp 20 gói x 5g)Trà Đông Trùng Hạ Thảo Fucoidan Phurba (Hộp 20 gói x 5g)Trà Đông Trùng Hạ Thảo Fucoidan Phurba (Hộp 20 gói x 5g)",
-    "price": 490,
-    "salePrice": 441,
-    "quantity": 27,
-    "category_id": 1,
+    "price": 490000,
+    "salePrice": 441000,
+    "quantity": 11,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/cam-min.png?v=1727687272053",
@@ -990,10 +990,10 @@
   },
   {
     "name": "Trà Thanh Nhiệt Detox Phurba Detox Cơ Thể (Hộp 20 gói x 5g)Trà Thanh Nhiệt Detox Phurba Detox Cơ Thể (Hộp 20 gói x 5g)Trà Thanh Nhiệt Detox Phurba Detox Cơ Thể (Hộp 20 gói x 5g)",
-    "price": 480,
-    "salePrice": 432,
-    "quantity": 4,
-    "category_id": 1,
+    "price": 480000,
+    "salePrice": 432000,
+    "quantity": 9,
+    "category_id": 5,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/z5882292199727-46210cecf2600887d7c8ad2056da3f79.jpg?v=1727686552217",
@@ -1005,10 +1005,10 @@
   },
   {
     "name": "Yến Mạch Tươi Nhập Từ Úc Yến Mạch Ăn Kiêng Tự Nhiên Hebekery - Túi 250gYến Mạch Tươi Nhập Từ Úc Yến Mạch Ăn Kiêng Tự Nhiên Hebekery - Túi 250gYến Mạch Tươi Nhập Từ Úc Yến Mạch Ăn Kiêng Tự Nhiên Hebekery - Túi 250g",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 44,
-    "category_id": 1,
+    "quantity": 39,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/ye-nmach250-min.png?v=1672369076367",
@@ -1022,10 +1022,10 @@
   },
   {
     "name": "Combo Quà Tặng 8/3 Healthy Khoẻ Dáng - Sáng Da từ HEBEKERY_MatchaCombo Quà Tặng 8/3 Healthy Khoẻ Dáng - Sáng Da từ HEBEKERY_MatchaCombo Quà Tặng 8/3 Healthy Khoẻ Dáng - Sáng Da từ HEBEKERY_Matcha",
-    "price": 19,
-    "salePrice": 17.1,
-    "quantity": 36,
-    "category_id": 1,
+    "price": 19000,
+    "salePrice": 17100,
+    "quantity": 48,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/1-1678074878811-290faadf-9989-46ad-9db6-71f1ce830cea.jpg?v=1688479618290"
@@ -1034,10 +1034,10 @@
   },
   {
     "name": "Combo Quà Tặng 8/3 Healthy Khoẻ Dáng - Sáng Da từ HEBEKERY_Truyền ThốngCombo Quà Tặng 8/3 Healthy Khoẻ Dáng - Sáng Da từ HEBEKERY_Truyền ThốngCombo Quà Tặng 8/3 Healthy Khoẻ Dáng - Sáng Da từ HEBEKERY_Truyền Thống",
-    "price": 19,
-    "salePrice": 17.1,
-    "quantity": 1,
-    "category_id": 1,
+    "price": 19000,
+    "salePrice": 17100,
+    "quantity": 22,
+    "category_id": 6,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/1-1678074878811.jpg?v=1688479618337"
@@ -1046,10 +1046,10 @@
   },
   {
     "name": "Granola Truly Healthy Hebekery - Không Nho - Vị Truyền thốngGranola Truly Healthy Hebekery - Không Nho - Vị Truyền thốngGranola Truly Healthy Hebekery - Không Nho - Vị Truyền thống",
-    "price": null,
+    "price": 100000,
     "salePrice": null,
-    "quantity": 26,
-    "category_id": 1,
+    "quantity": 4,
+    "category_id": 2,
     "classification": "default",
     "images": [
       "https://bizweb.dktcdn.net/100/415/009/products/grakn250-min.png?v=1672369981540",

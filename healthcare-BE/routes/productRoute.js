@@ -6,4 +6,6 @@ route.get("/", productController.getAllProduct);
 
 route.get("/category/:categoryId", productController.getProductByCategory);
 
+route.get("/:id", productController.getProductById);
+
 module.exports = route;

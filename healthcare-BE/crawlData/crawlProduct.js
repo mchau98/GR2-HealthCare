@@ -100,7 +100,7 @@ async function crawlProduct(url) {
 
     // ✅ Xử lý price và salePrice
     const price = priceText
-      ? parseFloat(priceText.replace(/[^\d.]/g, ""))
+      ? parseFloat(priceText.replace(/[^\d]/g, ""))
       : null;
     const salePrice = price ? parseFloat((price * 0.9).toFixed(2)) : null;
 

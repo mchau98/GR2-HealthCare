@@ -50,6 +50,17 @@
   font-weight: 600;
   font-size: 14px;
   margin-bottom: 8px;
+    display: -webkit-box;
+    -webkit-line-clamp: 3; 
+    -webkit-box-orient: vertical;
+    overflow: hidden;
+    text-overflow: ellipsis;
+    transition: color 0.2s ease;
+}
+
+.product-info .name:hover{
+  color: var(--primary-color);
+  cursor: pointer;
 }
 
 .product-info .price {

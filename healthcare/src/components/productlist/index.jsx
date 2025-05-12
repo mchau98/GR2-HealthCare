@@ -1,94 +1,95 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import ProductCard from "../productcard";
+import Pagination from "../pagination"; // Import pagination component
+import "./index.scss"
 
-const products = [
-  {
-    id: 1,
-    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
-    price: 95000,
-    oldPrice: null,
-    image:
-      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
-    isHot: true,
-    available: true,
-  },
-  {
-    id: 2,
-    name: "[Hộp 300gr] Biscotti Nguyên Cám Low Calories 4 Vị - Bánh Ngũ Cốc Nướng Ăn Kiêng",
-    price: 170000,
-    oldPrice: null,
-    image:
-      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/biscotti-hop.webp",
-    available: false,
-  },
-  {
-    id: 3,
-    name: "[Hũ 150gr] Biscotti Nguyên Cám Low Calories 4 Vị Hebekery",
-    price: 85000,
-    oldPrice: null,
-    image:
-      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/biscotti-hu.webp",
-    rating: 5,
-    available: true,
-  },
-  {
-    id: 4,
-    name: "Thanh Hạt Granola Bar Rong Biển Nhật Bản Hebekery",
-    price: 99000,
-    oldPrice: 130000,
-    discount: "-24%",
-    image:
-      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/granola-bar.webp",
-    available: false,
-  },
-  {
-    id: 5,
-    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
-    price: 95000,
-    oldPrice: null,
-    image:
-      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
-    isHot: true,
-    available: true,
-  },
-  {
-    id: 6,
-    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
-    price: 95000,
-    oldPrice: null,
-    image:
-      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
-    isHot: true,
-    available: true,
-  },
-  {
-    id: 7,
-    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
-    price: 95000,
-    oldPrice: null,
-    image:
-      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
-    isHot: true,
-    available: true,
-  },
-  {
-    id: 8,
-    name: "Cookies Hạnh Nhân Nguyên Cám - Bánh Cookies Ăn Vặt Chuẩn Healthy HeBekery",
-    price: 95000,
-    oldPrice: null,
-    image:
-      "https://bizweb.dktcdn.net/thumb/large/100/415/009/products/vn-11134207-7r98o-lt0d5dhnc24k39.webp?v=1739936616860",
-    isHot: true,
-    available: true,
-  },
-];
+function ProductList({ categoryId }) {
+  const [products, setProducts] = useState([]);
+  const [loading, setLoading] = useState(true);
+  const [error, setError] = useState(null);
+  
+  // Pagination states
+  const [currentPage, setCurrentPage] = useState(1);
+  const productsPerPage = 8; // 2 rows x 4 columns
+  
+  useEffect(() => {
+    const fetchProducts = async () => {
+      setLoading(true);
+      setError(null);
 
-function ProductList() {
+      try {
+        const url = categoryId
+          ? `http://localhost:8000/api/v1/product/category/${categoryId}`
+          : `http://localhost:8000/api/v1/product/`;
+
+        const response = await fetch(url);
+
+        if (!response.ok) {
+          throw new Error(`HTTP error! Status: ${response.status}`);
+        }
+
+        const data = await response.json();
+        setProducts(data);
+      } catch (err) {
+        setError(err.message);
+        console.error("Error fetching products:", err);
+      } finally {
+        setLoading(false);
+      }
+    };
+
+    fetchProducts();
+    setCurrentPage(1); // Reset to first page when category changes
+  }, [categoryId]);
+
+  // Pagination functions
+  const totalPages = Math.ceil((products?.length || 0) / productsPerPage);
+  
+  const paginate = (pageNumber) => setCurrentPage(pageNumber);
+  
+  const nextPage = () => {
+    if (currentPage < totalPages) {
+      setCurrentPage(currentPage + 1);
+    }
+  };
+  
+  const prevPage = () => {
+    if (currentPage > 1) {
+      setCurrentPage(currentPage - 1);
+    }
+  };
+
+  if (loading) {
+    return <div className="loading">Đang tải sản phẩm...</div>;
+  }
+
+  if (error) {
+    return <div className="error">Đã xảy ra lỗi: {error}</div>;
+  }
+
+  if (!products.length) {
+    return <div className="no-products">Không có sản phẩm nào</div>;
+  }
+
+  const indexOfLastProduct = currentPage * productsPerPage;
+  const indexOfFirstProduct = indexOfLastProduct - productsPerPage;
+  const currentProducts = products.slice(indexOfFirstProduct, indexOfLastProduct);
+
   return (
-    <div className="product-grid">
-      {products.map((item) => (
-        <ProductCard key={item.id} product={item} />
-      ))}
+    <div className="products-container">
+      <div className="product-grid">
+        {currentProducts.map((item) => (
+          <ProductCard key={item.id} product={item} />
+        ))}
+      </div>
+      
+      <Pagination
+        currentPage={currentPage}
+        totalPages={totalPages}
+        paginate={paginate}
+        prevPage={prevPage}
+        nextPage={nextPage}
+      />
     </div>
   );
 }
