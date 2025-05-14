@@ -32,11 +32,13 @@ function ProductCard({ product }) {
           <div className="name">{product.name}</div>
         </Link>
         <div className="price">
-          {/* Hiển thị price cho tất cả sản phẩm */}
-          <strong>{formatPrice(product.price)}₫</strong>
-          {/* Hiển thị salePrice và gạch đi price nếu có salePrice */}
-          {product.salePrice && product.price !== product.salePrice && (
-            <span className="old-price">{formatPrice(product.salePrice)}₫</span>
+          {product.salePrice && product.price !== product.salePrice ? (
+            <>
+              <strong>{formatPrice(product.salePrice)}₫</strong>
+              <span className="old-price">{formatPrice(product.price)}₫</span>
+            </>
+          ) : (
+            <strong>{formatPrice(product.price)}₫</strong>
           )}
         </div>
         <button className="add-btn">Thêm vào giỏ</button>
@@ -46,3 +48,4 @@ function ProductCard({ product }) {
 }
 
 export default ProductCard;
+
