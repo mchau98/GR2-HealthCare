@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
+import ProductList from "../../../components/productlist";
 import { formatDescription } from "../../../utils";
 import { getProductById } from "../../../services/productService"; 
 import { useLocation, useNavigate } from "react-router-dom";
@@ -209,6 +210,10 @@ const ProductDetail = () => {
         <ReactMarkdown remarkPlugins={[remarkGfm]}>
           {formatDescription(product.description)}
         </ReactMarkdown>
+      </div>
+      <div className="product-detail__description">
+      <p className="description-detail">CÓ THỂ BẠN QUAN TÂM</p>
+        <ProductList categoryId={product.category_id} />
       </div>
     </div>
   );
