@@ -1,7 +1,8 @@
 import React, { useState, useEffect } from "react";
 import ProductCard from "../productcard";
 import Pagination from "../pagination"; // Import pagination component
-import "./index.scss"
+import "./index.scss";
+import { getProductByCategory, getAllProducts } from "../../services/productService";
 
 function ProductList({ categoryId }) {
   const [products, setProducts] = useState([]);
@@ -18,20 +19,13 @@ function ProductList({ categoryId }) {
       setError(null);
 
       try {
-        const url = categoryId
-          ? `http://localhost:8000/api/v1/product/category/${categoryId}`
-          : `http://localhost:8000/api/v1/product/`;
+        const data = categoryId
+          ? await getProductByCategory(categoryId)
+          : await getAllProducts();
 
-        const response = await fetch(url);
-
-        if (!response.ok) {
-          throw new Error(`HTTP error! Status: ${response.status}`);
-        }
-
-        const data = await response.json();
         setProducts(data);
       } catch (err) {
-        setError(err.message);
+        setError(err.message || "Lỗi không xác định");
         console.error("Error fetching products:", err);
       } finally {
         setLoading(false);
@@ -39,7 +33,7 @@ function ProductList({ categoryId }) {
     };
 
     fetchProducts();
-    setCurrentPage(1); // Reset to first page when category changes
+    setCurrentPage(1);
   }, [categoryId]);
 
   // Pagination functions
