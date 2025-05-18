@@ -13,16 +13,15 @@ module.exports = {
 
     const now = new Date();
 
-    // Chuyển đổi dữ liệu từ file JSON thành định dạng phù hợp với model
     const seedData = products.map((product) => ({
       name: product.name || null,
       price: parseFloat(product.price) || null,
       salePrice: parseFloat(product.salePrice) || null,
       quantity: product.quantity || null,
       category_id: product.category_id || null,
-      classification: product.classification || 'default',
+      classification: JSON.stringify(product.classification || '[]'),
       description: product.description || '',
-      images: JSON.stringify(product.images) || '[]', // Lưu images dưới dạng JSON string
+      images: JSON.stringify(product.images) || '[]',
       createdAt: now,
       updatedAt: now,
     }));
