@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; 
 import "./index.scss";
+import { getPostsByCategory } from "../../services/postService";
 
 const LatestPost = ({ category }) => {
   const [post, setPost] = useState(null);
@@ -9,11 +10,8 @@ const LatestPost = ({ category }) => {
   useEffect(() => {
     const fetchLatestPost = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:8000/api/v1/posts/getPosts?category=${encodeURIComponent(category)}`
-        );
-        const result = await response.json();
-
+        const result = await getPostsByCategory(category);
+  
         if (result.success && result.data.length > 0) {
           setPost(result.data[0]); // Lấy bài viết đầu tiên (mới nhất)
         }
@@ -23,7 +21,7 @@ const LatestPost = ({ category }) => {
         setLoading(false);
       }
     };
-
+  
     fetchLatestPost();
   }, [category]);
 

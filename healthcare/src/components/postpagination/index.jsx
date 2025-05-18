@@ -1,6 +1,7 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom"; 
 import "./index.scss";
+import { getPostsByCategory } from "../../services/postService";
 
 const PostsPagination = ({ category, showPagination = true }) => {
   const [posts, setPosts] = useState([]);
@@ -11,12 +12,7 @@ const PostsPagination = ({ category, showPagination = true }) => {
   useEffect(() => {
     const fetchPosts = async () => {
       try {
-        const response = await fetch(
-          `http://localhost:8000/api/v1/posts/getPosts?category=${encodeURIComponent(
-            category
-          )}`
-        );
-        const result = await response.json();
+        const result = await getPostsByCategory(category);
 
         if (result.success) {
           let sortedPosts = result.data.sort(

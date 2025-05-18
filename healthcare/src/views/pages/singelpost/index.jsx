@@ -5,6 +5,7 @@ import moment from "moment";
 import { useContext } from "react";
 // import { AuthContext } from "../context/authContext";
 import DOMPurify from "dompurify";
+import { getPostById } from "../../../services/postService";
 
 const Single = () => {
   const [post, setPost] = useState({});
@@ -18,12 +19,10 @@ const Single = () => {
   useEffect(() => {
     const fetchData = async () => {
       try {
-        const res = await axios.get(
-          `http://localhost:8000/api/v1/posts/getPost/${postId}`
-        );
-        setPost(res.data);
+        const data = await getPostById(postId); // Gọi từ service
+        setPost(data);
       } catch (err) {
-        console.log(err);
+        console.error("Error fetching post:", err);
       }
     };
     fetchData();
