@@ -48,7 +48,7 @@ module.exports = (sequelize, DataTypes) => {
     },
     {
       sequelize,
-      tableName: "OrderItem",
+      tableName: "OrderItems",
       modelName: "OrderItem",
       timestamps: true,
     }

@@ -6,7 +6,7 @@ async function getCartWithItems(userId) {
     include: [
       {
         model: CartItem,
-        as: "items",
+        as: "cartItems",
         include: [
           {
             model: Product,
