@@ -1,4 +1,3 @@
-// productController.js
 const productQuery = require('../queries/productQuery');
 
 const getAllProduct = async (req, res) => {

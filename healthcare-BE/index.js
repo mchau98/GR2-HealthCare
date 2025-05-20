@@ -10,6 +10,7 @@ const port = process.env.PORT || 8080;
 const caloRoute = require("./routes/caloRoute");
 const postsRoute = require("./routes/postsRoute");
 const productRoute = require("./routes/productRoute");
+const cartRoute = require("./routes/cartRoute")
 const { crawlLinks } = require("./crawlData/crawlBlog");
 const { main } = require("./crawlData/crawlProduct");
 
@@ -36,6 +37,7 @@ app.use("/api/v1", authRoute);
 app.use("/api/v1/calo", caloRoute);
 app.use("/api/v1/posts", postsRoute);
 app.use("/api/v1/product", productRoute);
+app.use("/api/v1/cart", cartRoute);
 
 sequelize.authenticate().then(() => {
   console.log("Connection has been established successfully.");
