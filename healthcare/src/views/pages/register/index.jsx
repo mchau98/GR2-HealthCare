@@ -1,109 +1,77 @@
-import React, { useState } from "react";
+import React, { useState, useContext } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
-import { ToastContainer, toast } from "react-toastify";
+import { toast, ToastContainer } from "react-toastify";
 import "react-toastify/dist/ReactToastify.css";
 import "./index.scss";
 import Logo from "../../../assets/images/logoText.png";
 import BG from "../../../assets/images/bg-login.webp";
+import { useAuth } from "../../../contexts/authContext";
 
 const Register = () => {
   const navigate = useNavigate();
+  const { register } = useAuth();
   const [username, setUsername] = useState("");
-  const [usernameError, setUsernameError] = useState("");
   const [email, setEmail] = useState("");
-  const [emailError, setEmailError] = useState("");
+  const [phone, setPhone] = useState("");
   const [password, setPassword] = useState("");
   const [confirmPassword, setConfirmPassword] = useState("");
-  const [passwordError, setPasswordError] = useState("");
-  const [phone, setPhone] = useState("");
+
+  const [usernameError, setUsernameError] = useState("");
+  const [emailError, setEmailError] = useState("");
   const [phoneError, setPhoneError] = useState("");
-  const handleFinish = async () => {
-    console.log(username + " " + email + " " + password + " " + phone);
-    try {
-      const response = await axios.post(
-        "http://localhost:8000/api/v1/register",
-        {
-          email: email,
-          password: password,
-          name: username,
-          phone: phone,
-        }
-      );
+  const [passwordError, setPasswordError] = useState("");
 
-      // Xử lý khi đăng nhập thành công
-      if (response.status === 200) {
-        toast.success(response.data.message);
-        sessionStorage.setItem("authToken", response.data.token);
-        //Xử lý token
-        const parts = response.data.token.split("."); // Tách token thành 3 phần
-        const payload = parts[1];
-        const decodedPayload = JSON.parse(atob(payload)); // Giải mã Base64
-        sessionStorage.setItem("auth", JSON.stringify(decodedPayload));
-        setTimeout(() => {
-          navigate("/");
-        }, 3000);
-      }
-    } catch (error) {
-      // Xử lý lỗi từ server
-      console.log(error.response.data.error);
-      toast.error(error.response.data.error);
-    }
-  };
+  const validateInputs = () => {
+    let valid = true;
 
-  // Kiểm tra username hợp lệ
-  const handleUsernameChange = (e) => {
-    const value = e.target.value;
-    setUsername(value);
     const usernameRegex = /^[a-zA-Z0-9]{4,20}$/;
-    if (!usernameRegex.test(value)) {
+    if (!usernameRegex.test(username)) {
       setUsernameError("Username chỉ chứa chữ cái, số (4-20 ký tự).");
-    } else {
-      setUsernameError("");
-    }
-  };
+      valid = false;
+    } else setUsernameError("");
 
-  // Kiểm tra email hợp lệ
-  const handleEmailChange = (e) => {
-    const value = e.target.value;
-    setEmail(value);
     const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailRegex.test(value)) {
+    if (!emailRegex.test(email)) {
       setEmailError("Email không hợp lệ.");
-    } else {
-      setEmailError("");
-    }
-  };
+      valid = false;
+    } else setEmailError("");
 
-  // Kiểm tra số điện thoại hợp lệ
-  const handlePhoneChange = (e) => {
-    const value = e.target.value;
-    setPhone(value);
-    if (!/^\d*$/.test(value)) {
-      setPhoneError("Số điện thoại chỉ được chứa số.");
-    } else if (value.length !== 10) {
+    if (!/^\d{10}$/.test(phone)) {
       setPhoneError("Số điện thoại phải có đúng 10 chữ số.");
-    } else {
-      setPhoneError("");
-    }
+      valid = false;
+    } else setPhoneError("");
+
+    if (password !== confirmPassword) {
+      setPasswordError("Mật khẩu nhập lại không khớp!");
+      valid = false;
+    } else setPasswordError("");
+
+    return valid;
   };
 
-  // Kiểm tra nhập lại mật khẩu
-  const handleConfirmPasswordChange = (e) => {
-    const value = e.target.value;
-    setConfirmPassword(value);
-    if (value !== password) {
-      setPasswordError("Mật khẩu nhập lại không khớp!");
+  const handleRegister = async () => {
+    if (!validateInputs()) return;
+
+    const result = await register({
+      name: username,
+      email,
+      phone,
+      password,
+    });
+
+    if (result.success) {
+      toast.success("Đăng ký thành công!");
+      setTimeout(() => navigate("/"), 2000);
     } else {
-      setPasswordError("");
+      toast.error(result.message || "Đăng ký thất bại!");
     }
   };
 
   return (
     <div className="login-container">
       <div className="login-image">
-        <img src={Logo} alt="" width="120px" />
-        <img src={BG} alt="" width="120px" />
+        <img src={Logo} alt="Logo" width="120px" />
+        <img src={BG} alt="Background" width="120px" />
       </div>
 
       <div className="login-form">
@@ -115,7 +83,7 @@ const Register = () => {
               type="text"
               placeholder="Nhập username"
               value={username}
-              onChange={handleUsernameChange}
+              onChange={(e) => setUsername(e.target.value)}
               required
             />
             {usernameError && <p className="error-text">{usernameError}</p>}
@@ -127,7 +95,7 @@ const Register = () => {
               type="email"
               placeholder="Nhập email"
               value={email}
-              onChange={handleEmailChange}
+              onChange={(e) => setEmail(e.target.value)}
               required
             />
             {emailError && <p className="error-text">{emailError}</p>}
@@ -139,7 +107,7 @@ const Register = () => {
               type="tel"
               placeholder="Nhập số điện thoại"
               value={phone}
-              onChange={handlePhoneChange}
+              onChange={(e) => setPhone(e.target.value)}
               required
             />
             {phoneError && <p className="error-text">{phoneError}</p>}
@@ -150,30 +118,25 @@ const Register = () => {
             <input
               type="password"
               placeholder="Nhập mật khẩu"
-              required
               value={password}
               onChange={(e) => setPassword(e.target.value)}
+              required
             />
           </div>
+
           <div className="input-group">
             <label>Nhập lại mật khẩu</label>
             <input
               type="password"
               placeholder="Nhập lại mật khẩu"
-              required
               value={confirmPassword}
-              onChange={handleConfirmPasswordChange}
+              onChange={(e) => setConfirmPassword(e.target.value)}
+              required
             />
             {passwordError && <p className="error-text">{passwordError}</p>}
           </div>
-          <button
-            type="button"
-            className="login-btn"
-            disabled={
-              usernameError || emailError || phoneError || passwordError
-            }
-            onClick={handleFinish}
-          >
+
+          <button type="button" className="login-btn" onClick={handleRegister}>
             Đăng ký
           </button>
         </form>

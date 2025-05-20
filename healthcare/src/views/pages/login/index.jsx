@@ -1,19 +1,18 @@
 import React, { useState } from "react";
 import { Link, useNavigate } from "react-router-dom";
-import axios from "axios";
+import { toast, ToastContainer } from "react-toastify";
+import { useAuth } from "../../../contexts/authContext"; // Đảm bảo đúng đường dẫn
 import "./index.scss";
-import { ToastContainer, toast } from "react-toastify";
-import "react-toastify/dist/ReactToastify.css";
 import Logo from "../../../assets/images/logoText.png";
 import BG from "../../../assets/images/bg-login.webp";
 
 const Login = () => {
   const navigate = useNavigate();
+  const { login } = useAuth(); // login từ context
   const [email, setEmail] = useState("");
   const [emailError, setEmailError] = useState("");
   const [password, setPassword] = useState("");
 
-  // Kiểm tra email hợp lệ
   const handleEmailChange = (e) => {
     const value = e.target.value;
     setEmail(value);
@@ -25,54 +24,38 @@ const Login = () => {
     }
   };
 
-  // Cập nhật state password
   const handlePasswordChange = (e) => {
     setPassword(e.target.value);
   };
 
   const handleFinish = async (e) => {
-    e.preventDefault(); // Ngăn chặn hành vi mặc định của form
-    console.log(email + " " + password); // Debug kiểm tra password có được cập nhật không
+    e.preventDefault();
 
-    try {
-      const response = await axios.post("http://localhost:8000/api/v1/login", {
-        email: email,
-        password: password,
-      });
+    if (emailError) {
+      toast.error("Vui lòng nhập email hợp lệ.");
+      return;
+    }
 
-      if (response.status === 200) {
-        toast.success(response.data.message);
-        sessionStorage.setItem("authToken", response.data.token);
+    const result = await login(email, password); // Gọi từ context
 
-        // Xử lý token
-        const parts = response.data.token.split(".");
-        const payload = parts[1];
-        const decodedPayload = JSON.parse(atob(payload));
+    if (result.success) {
+      toast.success("Đăng nhập thành công!");
 
-        sessionStorage.setItem("auth", JSON.stringify(decodedPayload));
-        const role = decodedPayload.role;
-        if (role === "user") {
-          setTimeout(() => {
-            navigate("/");
-          }, 3000);
-        } else if (role === "admin") {
-          setTimeout(() => {
-            navigate("/");
-          }, 3000);
-        }
-      }
-    } catch (error) {
-      console.log(error.response?.data?.error || "Đăng nhập thất bại");
-      toast.error(error.response?.data?.error || "Đăng nhập thất bại");
+      setTimeout(() => {
+        navigate("/"); // Điều hướng tùy theo role (có thể xử lý trong App Router)
+      }, 2000);
+    } else {
+      toast.error(result.message || "Đăng nhập thất bại");
     }
   };
 
   return (
     <div className="login-container">
       <div className="login-image">
-        <img src={Logo} alt="" width="120px" />
-        <img src={BG} alt="" width="120px" />
+        <img src={Logo} alt="Logo" width="120px" />
+        <img src={BG} alt="Background" width="120px" />
       </div>
+
       <div className="login-form">
         <h2>Đăng nhập</h2>
         <form onSubmit={handleFinish}>
@@ -87,6 +70,7 @@ const Login = () => {
             />
             {emailError && <p className="error-text">{emailError}</p>}
           </div>
+
           <div className="input-group">
             <label>Mật khẩu</label>
             <input
@@ -97,6 +81,7 @@ const Login = () => {
               required
             />
           </div>
+
           <button type="submit" className="login-btn">
             Đăng nhập
           </button>
@@ -109,6 +94,7 @@ const Login = () => {
           </Link>
         </p>
       </div>
+
       <ToastContainer />
     </div>
   );

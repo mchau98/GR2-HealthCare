@@ -1,5 +1,9 @@
 $lightGreen: #b9e7e7;
 $maincolor: #097770;
+$dropdownBg: white;
+$dropdownHoverBg: #f0f9f9;
+$dropdownShadow: rgba(9, 119, 112, 0.15);
+
 .navbar {
   .nav-head {
     position: fixed;
@@ -41,8 +45,8 @@ $maincolor: #097770;
           color: #ffb82e;
           text-decoration: underline;
           text-decoration-color: #ffb82e;
-          text-decoration-thickness: 2px; // Tăng độ dày gạch chân
-          text-underline-offset: 3px; // Điều chỉnh khoảng cách gạch chân với chữ
+          text-decoration-thickness: 2px;
+          text-underline-offset: 3px;
         }
       }
 
@@ -72,6 +76,47 @@ $maincolor: #097770;
           border: 1px solid teal;
         }
       }
+    }
+  }
+}
+
+.ant-dropdown {
+  min-width: 180px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+
+  .ant-dropdown-menu {
+    padding: 8px 0;
+    border-radius: 8px;
+
+    .ant-dropdown-menu-item {
+      font-size: 22px;
+      color: $maincolor;
+      font-weight: 500;
+      padding: 10px 20px;
+      transition: background-color 0.3s ease, color 0.3s ease;
+
+      &:hover {
+        background-color: $maincolor;
+        color: white;
+      }
+    }
+
+    .ant-dropdown-menu-item-disabled {
+      color: #888 !important; 
+      background-color: transparent !important;
+      font-weight: 500;
+      cursor: not-allowed;
+
+      &:hover {
+        background-color: transparent !important;
+        color: #888 !important;
+      }
+    }
+
+    .ant-dropdown-menu-item-divider {
+      border-top: 1px solid lighten($maincolor, 60%);
+      margin: 6px 0;
     }
   }
 }
