@@ -1,16 +1,20 @@
 import React, { useState } from "react";
 import { Link } from "react-router-dom";
+import { useCart } from "../../contexts/cartContext"; 
+import { formatPrice } from "../../utils"
 
 function ProductCard({ product }) {
   const [isHovered, setIsHovered] = useState(false);
+  const { addToCart } = useCart();
+
+  const handleAddToCart = () => {
+    addToCart(product.id, 1); 
+  };
+
 
   const discount = product.salePrice
     ? (100 - (product.salePrice / product.price) * 100).toFixed(0)
     : null;
-
-  const formatPrice = (price) => {
-    return price && !isNaN(price) ? price.toLocaleString() : "Liên hệ";
-  };
 
   const imageUrl =
     product.images?.length > 1 && isHovered
@@ -41,7 +45,7 @@ function ProductCard({ product }) {
             <strong>{formatPrice(product.price)}₫</strong>
           )}
         </div>
-        <button className="add-btn">Thêm vào giỏ</button>
+        <button className="add-btn" onClick={handleAddToCart}>Thêm vào giỏ</button>
       </div>
     </div>
   );

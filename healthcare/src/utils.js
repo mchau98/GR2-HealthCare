@@ -21,4 +21,8 @@ export function formatDescription(description) {
   
     return result.trim();
   }
+
+export const formatPrice = (price) => {
+    return price && !isNaN(price) ? price.toLocaleString() : "Liên hệ";
+  };
   
